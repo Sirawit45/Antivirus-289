@@ -1,0 +1,31 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Distribution / packaging
+build/
+dist/
+*.spec
+*.manifest
+
+# Executables & Binaries (>100MB blocked by GitHub)
+*.exe
+!bin/adb/*.exe
+APKsGuardPro289.exe
+
+# Duplicate driver assets (already in assets/drivers)
+ui/assets/drivers/
+
+# Local logs & caches
+logs.txt
+*.log
+.pytest_cache/
+
+# IDE & OS files
+.vscode/
+.idea/
+.gemini/
+.DS_Store
+Thumbs.db

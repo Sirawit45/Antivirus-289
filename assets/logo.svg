@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%" fx="30%" fy="30%">
+      <stop offset="0%" stop-color="#162032" />
+      <stop offset="60%" stop-color="#0b101b" />
+      <stop offset="100%" stop-color="#05080e" />
+    </radialGradient>
+
+    <!-- Shield Neon Cyan Gradient -->
+    <linearGradient id="shieldCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="50%" stop-color="#4facfe" />
+      <stop offset="100%" stop-color="#0066fe" />
+    </linearGradient>
+
+    <!-- Shield Emerald Gradient -->
+    <linearGradient id="shieldEmerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f5a0" />
+      <stop offset="100%" stop-color="#00d9e9" />
+    </linearGradient>
+
+    <!-- Golden Accent Gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd200" />
+      <stop offset="100%" stop-color="#f7971e" />
+    </linearGradient>
+
+    <!-- Neon Glow Filter -->
+    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glowEmerald" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="512" height="512" rx="110" fill="url(#bgGrad)" stroke="#1f293d" stroke-width="6" />
+
+  <!-- Cyber Grid Circuit Lines -->
+  <g opacity="0.2" stroke="#00f2fe" stroke-width="2" fill="none">
+    <path d="M 60 140 H 160 L 200 180 V 280 L 170 310 H 70" />
+    <path d="M 452 140 H 352 L 312 180 V 280 L 342 310 H 442" />
+    <circle cx="60" cy="140" r="4" fill="#00f2fe" />
+    <circle cx="70" cy="310" r="4" fill="#00f2fe" />
+    <circle cx="452" cy="140" r="4" fill="#00f2fe" />
+    <circle cx="442" cy="310" r="4" fill="#00f2fe" />
+    <path d="M 256 30 V 70" />
+    <circle cx="256" cy="70" r="4" fill="#00f2fe" />
+  </g>
+
+  <!-- Outer Glowing Shield -->
+  <path d="M 256 65 
+           C 365 65 410 115 410 210 
+           C 410 330 320 405 256 445 
+           C 192 405 102 330 102 210 
+           C 102 115 147 65 256 65 Z" 
+        fill="#0b1322" 
+        stroke="url(#shieldCyan)" 
+        stroke-width="12" 
+        filter="url(#glowCyan)" />
+
+  <!-- Inner Armor Shield Plate -->
+  <path d="M 256 95 
+           C 340 95 375 135 375 210 
+           C 375 305 305 370 256 405 
+           C 207 370 137 305 137 210 
+           C 137 135 172 95 256 95 Z" 
+        fill="#111d33" 
+        stroke="url(#shieldEmerald)" 
+        stroke-width="4" />
+
+  <!-- Center Core Cyber Emblem -->
+  <!-- Stylized Android Head / Scanner Crown -->
+  <g filter="url(#glowEmerald)">
+    <!-- Antenna Left -->
+    <line x1="220" y1="160" x2="202" y2="132" stroke="#00f5a0" stroke-width="7" stroke-linecap="round" />
+    <!-- Antenna Right -->
+    <line x1="292" y1="160" x2="310" y2="132" stroke="#00f5a0" stroke-width="7" stroke-linecap="round" />
+
+    <!-- Android Head Dome -->
+    <path d="M 188 205 C 188 165 215 155 256 155 C 297 155 324 165 324 205 Z" fill="url(#shieldEmerald)" />
+    
+    <!-- Android Glowing Eyes -->
+    <circle cx="225" cy="185" r="6" fill="#0b1322" />
+    <circle cx="287" cy="185" r="6" fill="#0b1322" />
+
+    <!-- Security Checkmark & Radar Core in Body -->
+    <!-- Android Torso Shield -->
+    <path d="M 188 218 H 324 V 275 C 324 315 285 345 256 360 C 227 345 188 315 188 275 Z" fill="#0d253f" stroke="#00f2fe" stroke-width="4" />
+
+    <!-- Dynamic Glowing Checkmark -->
+    <path d="M 220 270 L 245 295 L 298 235" fill="none" stroke="url(#shieldEmerald)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- Number 289 Badge at Top Right of Shield -->
+  <g transform="translate(320, 75)">
+    <rect width="90" height="34" rx="10" fill="#ff1744" stroke="#ffffff" stroke-width="2" filter="url(#glowCyan)"/>
+    <text x="45" y="24" fill="#ffffff" font-family="'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="20" text-anchor="middle" letter-spacing="1">289</text>
+  </g>
+
+  <!-- Bottom Brand Text -->
+  <text x="256" y="475" fill="#00f2fe" font-family="'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="24" text-anchor="middle" letter-spacing="4" filter="url(#glowCyan)">APKs GUARD PRO</text>
+</svg>

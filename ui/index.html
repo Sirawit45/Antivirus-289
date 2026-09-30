@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APKs Guard Pro 289 - Android Antivirus & Malware Cleaner</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+</head>
+<body>
+
+  <!-- App Header -->
+  <header class="app-header">
+    <div class="brand-section">
+      <div class="brand-logo" id="appLogo">
+        <svg viewBox="0 0 512 512" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%" fx="30%" fy="30%">
+              <stop offset="0%" stop-color="#162032" />
+              <stop offset="60%" stop-color="#0b101b" />
+              <stop offset="100%" stop-color="#05080e" />
+            </radialGradient>
+            <linearGradient id="shieldCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#00f2fe" />
+              <stop offset="50%" stop-color="#4facfe" />
+              <stop offset="100%" stop-color="#0066fe" />
+            </linearGradient>
+            <linearGradient id="shieldEmerald" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#00f5a0" />
+              <stop offset="100%" stop-color="#00d9e9" />
+            </linearGradient>
+            <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="10" result="blur" />
+              <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+            <filter id="glowEmerald" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="8" result="blur" />
+              <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+          </defs>
+          <rect width="512" height="512" rx="110" fill="url(#bgGrad)" stroke="#1f293d" stroke-width="6" />
+          <g opacity="0.2" stroke="#00f2fe" stroke-width="2" fill="none">
+            <path d="M 60 140 H 160 L 200 180 V 280 L 170 310 H 70" />
+            <path d="M 452 140 H 352 L 312 180 V 280 L 342 310 H 442" />
+            <circle cx="60" cy="140" r="4" fill="#00f2fe" />
+            <circle cx="70" cy="310" r="4" fill="#00f2fe" />
+            <circle cx="452" cy="140" r="4" fill="#00f2fe" />
+            <circle cx="442" cy="310" r="4" fill="#00f2fe" />
+            <path d="M 256 30 V 70" />
+            <circle cx="256" cy="70" r="4" fill="#00f2fe" />
+          </g>
+          <path d="M 256 65 C 365 65 410 115 410 210 C 410 330 320 405 256 445 C 192 405 102 330 102 210 C 102 115 147 65 256 65 Z" fill="#0b1322" stroke="url(#shieldCyan)" stroke-width="12" filter="url(#glowCyan)" />
+          <path d="M 256 95 C 340 95 375 135 375 210 C 375 305 305 370 256 405 C 207 370 137 305 137 210 C 137 135 172 95 256 95 Z" fill="#111d33" stroke="url(#shieldEmerald)" stroke-width="4" />
+          <g filter="url(#glowEmerald)">
+            <line x1="220" y1="160" x2="202" y2="132" stroke="#00f5a0" stroke-width="7" stroke-linecap="round" />
+            <line x1="292" y1="160" x2="310" y2="132" stroke="#00f5a0" stroke-width="7" stroke-linecap="round" />
+            <path d="M 188 205 C 188 165 215 155 256 155 C 297 155 324 165 324 205 Z" fill="url(#shieldEmerald)" />
+            <circle cx="225" cy="185" r="6" fill="#0b1322" />
+            <circle cx="287" cy="185" r="6" fill="#0b1322" />
+            <path d="M 188 218 H 324 V 275 C 324 315 285 345 256 360 C 227 345 188 315 188 275 Z" fill="#0d253f" stroke="#00f2fe" stroke-width="4" />
+            <path d="M 220 270 L 245 295 L 298 235" fill="none" stroke="url(#shieldEmerald)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
+          </g>
+          <g transform="translate(320, 75)">
+            <rect width="90" height="34" rx="10" fill="#ff1744" stroke="#ffffff" stroke-width="2" filter="url(#glowCyan)"/>
+            <text x="45" y="24" fill="#ffffff" font-family="'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="20" text-anchor="middle" letter-spacing="1">289</text>
+          </g>
+          <text x="256" y="475" fill="#00f2fe" font-family="'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="24" text-anchor="middle" letter-spacing="4" filter="url(#glowCyan)">APKs GUARD PRO</text>
+        </svg>
+      </div>
+      <div class="brand-title">
+        <h1>APKs GUARD PRO <span class="version-badge">v4.0 289</span></h1>
+        <p>Android Antivirus & Threat Neutralizer System</p>
+      </div>
+    </div>
+
+    <!-- Device Connection Status Bar -->
+    <div class="device-status-bar" id="deviceStatusBar">
+      <div class="status-indicator offline" id="statusDot"></div>
+      <div class="device-text" id="deviceStatusText">
+        <span><svg class="status-svg" viewBox="0 0 24 24" style="color: var(--accent-crimson);"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg> ไม่พบอุปกรณ์ (กรุณาต่อสาย USB และเปิด USB Debugging)</span>
+      </div>
+      <div class="battery-pill" id="batteryPill" style="display: none;">
+        <svg class="btn-svg" viewBox="0 0 24 24" style="color: var(--accent-emerald);"><rect x="1" y="6" width="18" height="12" rx="2"/><line x1="23" y1="11" x2="23" y2="13"/></svg>
+        <span id="batteryText">100%</span>
+      </div>
+      <button class="btn-icon" id="btnRefreshDevice" title="รีเฟรชการเชื่อมต่อ">
+        <svg class="svg-icon" viewBox="0 0 24 24"><path d="M23 4v6h-6M1 20v-6h6M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+      </button>
+      <button class="btn-icon" id="btnToggleSimulator" title="เปิด/ปิด โหมดจำลองอุปกรณ์ (Simulator)">
+        <svg class="svg-icon" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+      </button>
+    </div>
+
+    <!-- Header Right Buttons -->
+    <div class="header-right">
+      <div class="update-alert-pill" id="btnHeaderUpdate" onclick="switchTab('tab-updates')">
+        <svg class="svg-icon" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <span>ฐานข้อมูล: <b id="headerDbCount">2,571</b> ไวรัส</span>
+        <span class="version-badge" id="headerUpdateBadge" style="background:#e0f2fe; color:#0369a1; border-color:#bae6fd;">LATEST</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <div class="app-container">
+    
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+      <div class="nav-item active" onclick="switchTab('tab-scanner')">
+        <span class="nav-icon"><svg class="svg-icon" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+        <span>สแกน & ล้างไวรัส</span>
+      </div>
+      <div class="nav-item" onclick="switchTab('tab-updates')">
+        <span class="nav-icon"><svg class="svg-icon" viewBox="0 0 24 24"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg></span>
+        <span>อัพเดทฐานข้อมูล</span>
+      </div>
+      <div class="nav-item" onclick="switchTab('tab-device')">
+        <span class="nav-icon"><svg class="svg-icon" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></span>
+        <span>จัดการเครื่อง & ปิด ADB</span>
+      </div>
+      <div class="nav-item" onclick="switchTab('tab-apps')">
+        <span class="nav-icon"><svg class="svg-icon" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></span>
+        <span>จัดการแอพทั้งหมด</span>
+      </div>
+      <div class="nav-item" onclick="switchTab('tab-drivers')">
+        <span class="nav-icon"><svg class="svg-icon" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/><circle cx="12" cy="2" r="1.5"/><rect x="4.5" y="19" width="3" height="3"/></svg></span>
+        <span>ไดร์เวอร์ & วิธีต่อสาย</span>
+      </div>
+      <div class="nav-item" onclick="switchTab('tab-logs')">
+        <span class="nav-icon"><svg class="svg-icon" viewBox="0 0 24 24"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg></span>
+        <span>ประวัติบันทึกระบบ</span>
+      </div>
+      <div class="nav-item" onclick="switchTab('tab-settings')">
+        <span class="nav-icon"><svg class="svg-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span>
+        <span>ตั้งค่าโปรแกรม</span>
+      </div>
+
+      <div class="sidebar-footer">
+        <div style="color: var(--primary-cyan); font-weight: 600; margin-bottom: 2px; display:flex; align-items:center; gap:6px;">
+          <svg class="status-svg" viewBox="0 0 24 24" style="color:var(--primary-cyan);"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          <span>APKs Guard 289</span>
+        </div>
+        <div>Engine: Multi-Layer Heuristics</div>
+        <div>Status: <span id="footerEngineStatus" style="color: var(--accent-emerald);">Ready</span></div>
+      </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="content-area">
+      
+      <!-- ==================== TAB 1: SCANNER ==================== -->
+      <section id="tab-scanner" class="tab-pane active">
+        
+        <!-- Scan Mode Selection Cards -->
+        <div class="scan-grid">
+          <div class="scan-card selected" id="cardQuickScan" onclick="selectScanMode('quick')">
+            <div class="scan-card-icon">
+              <svg class="scan-svg" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <h3>Quick Scan (สแกนเร็ว)</h3>
+            <p>สแกนแอพผู้ใช้ (User Apps) และเปรียบเทียบฐานข้อมูลไวรัส</p>
+          </div>
+          <div class="scan-card" id="cardFullScan" onclick="selectScanMode('full')">
+            <div class="scan-card-icon">
+              <svg class="scan-svg" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><circle cx="12" cy="11" r="3"/></svg>
+            </div>
+            <h3>Full Deep Scan (สแกนระบบ)</h3>
+            <p>สแกนแอพผู้ใช้, แอพระบบ, แอพที่ถูกซ่อน, และสิทธิ์การเข้าถึง</p>
+          </div>
+          <div class="scan-card" id="cardSmartScan" onclick="selectScanMode('smart')">
+            <div class="scan-card-icon">
+              <svg class="scan-svg" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+            </div>
+            <h3>Smart Check (อัจฉริยะ)</h3>
+            <p>ตรวจจับแอพติดตั้งนอก Store, สิทธิ์ Accessibility, และแอพดูดเงิน</p>
+          </div>
+          <div class="scan-card" id="cardDisabledScan" onclick="selectScanMode('disabled')">
+            <div class="scan-card-icon">
+              <svg class="scan-svg" viewBox="0 0 24 24"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+            </div>
+            <h3>Disabled Apps (แอพปิด)</h3>
+            <p>สแกนแอพที่ถูกปิดการทำงานและแฝงตัวอยู่ในเครื่อง</p>
+          </div>
+          <div class="scan-card" id="cardWipeScan" onclick="selectScanMode('wipe_non_essential')">
+            <div class="scan-card-icon">
+              <svg class="scan-svg" viewBox="0 0 24 24" style="color: var(--accent-amber);"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="8 12 11 15 16 9"/></svg>
+            </div>
+            <h3 style="color: var(--primary-blue);">Wipe Non-Essential</h3>
+            <p>ลบแอพทั้งหมดยกเว้น <b>ธนาคาร & โซเชียล</b></p>
+          </div>
+        </div>
+
+        <!-- Radar & Scanning Card -->
+        <div class="scanner-status-card" id="scannerStatusCard">
+          <div class="radar-wrapper">
+            <div class="radar-circle"></div>
+            <div class="radar-sweep"></div>
+            <div class="radar-core-icon" id="radarCoreIcon">
+              <svg class="radar-svg" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><circle cx="12" cy="12" r="3" fill="#00f2fe"/></svg>
+            </div>
+          </div>
+          
+          <div class="scanner-info">
+            <div class="scanner-headline">
+              <h2 id="scanStatusHeadline">พร้อมสำหรับการตรวจสอบมัลแวร์</h2>
+              <div id="scanPercentBadge" style="font-family: var(--font-cyber); font-weight: 700; font-size: 1.1rem; color: var(--primary-cyan);">0%</div>
+            </div>
+            
+            <div class="progress-bar-container">
+              <div class="progress-bar-fill" id="scanProgressBar"></div>
+            </div>
+
+            <div class="scanner-subtext" id="scanCurrentPackage">
+              คลิกปุ่ม "เริ่มสแกน" เพื่อตรวจหาโทรจัน, สปายแวร์, และแอพดูดเงินบนมือถือ
+            </div>
+          </div>
+
+          <div class="scanner-actions">
+            <button class="btn-primary" id="btnStartScan" onclick="startScan()">
+              <svg class="btn-svg" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              <span>เริ่มสแกน</span>
+            </button>
+            <button class="btn-secondary" id="btnCancelScan" onclick="cancelScan()" style="display: none;">
+              <svg class="btn-svg" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+              <span>หยุดสแกน</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Threat Badges Summary -->
+        <div class="summary-badges">
+          <div class="badge-card total">
+            <div class="badge-num" id="badgeTotalScanned">0</div>
+            <div>
+              <div style="font-weight: 600;">Total Scanned</div>
+              <div class="badge-label">จำนวนแอพที่ตรวจแล้ว</div>
+            </div>
+          </div>
+
+          <div class="badge-card critical">
+            <div class="badge-num" id="badgeCriticalThreats" style="color: var(--accent-crimson);">0</div>
+            <div>
+              <div style="font-weight: 600; color: var(--accent-crimson);">Critical Threats</div>
+              <div class="badge-label">มัลแวร์/โทรจันดูดเงิน</div>
+            </div>
+          </div>
+
+          <div class="badge-card high">
+            <div class="badge-num" id="badgeHighThreats" style="color: var(--accent-amber);">0</div>
+            <div>
+              <div style="font-weight: 600; color: var(--accent-amber);">Suspicious Apps</div>
+              <div class="badge-label">แอพน่าสงสัย/สิทธิ์อันตราย</div>
+            </div>
+          </div>
+
+          <div class="badge-card safe">
+            <div class="badge-num" id="badgeSkippedWhitelist" style="color: var(--accent-emerald);">0</div>
+            <div>
+              <div style="font-weight: 600; color: var(--accent-emerald);">Protected (Skip)</div>
+              <div class="badge-label">แอพปลอดภัยที่ต้องปกป้อง</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Threats Table Card -->
+        <div class="cyber-card">
+          <div class="card-title">
+            <span><svg class="status-svg" viewBox="0 0 24 24" style="color:var(--primary-cyan);"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><circle cx="12" cy="11" r="3"/></svg> รายการมัลแวร์และแอพเสี่ยงที่ตรวจพบ (<span id="threatTableCount">0</span> รายการ)</span>
+            <div style="display: flex; gap: 8px;">
+              <button class="btn-secondary" onclick="toggleSelectAllThreats()" style="padding: 6px 12px; font-size: 0.78rem;">
+                <svg class="btn-svg" viewBox="0 0 24 24"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                <span>เลือกทั้งหมด</span>
+              </button>
+              <button class="btn-secondary" onclick="clearScanResults()" style="padding: 6px 12px; font-size: 0.78rem;">
+                <svg class="btn-svg" viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+                <span>ล้างรายการ</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="threats-table-container">
+            <table class="threat-table">
+              <thead>
+                <tr>
+                  <th style="width: 40px;"><input type="checkbox" id="chkSelectAll" onchange="onSelectAllChanged(this)" checked></th>
+                  <th style="width: 90px;">ระดับความเสี่ยง</th>
+                  <th>ชื่อแอพพลิเคชัน</th>
+                  <th>Package Name</th>
+                  <th>ประเภทภัยคุกคาม / แหล่งที่มา</th>
+                  <th style="width: 110px; text-align: right;">การดำเนินการ</th>
+                </tr>
+              </thead>
+              <tbody id="threatsTableBody">
+                <tr>
+                  <td colspan="6" style="text-align: center; color: var(--text-dim); padding: 14px 10px;">
+                    ยังไม่มีผลการสแกน หรือไม่พบภัยคุกคามในระบบ
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Bottom Action Toolbar -->
+          <div class="bottom-action-bar">
+            <div>
+              <span id="selectedCountText" style="color: var(--text-muted); font-size: 0.85rem;">เลือกแล้ว: 0 รายการ</span>
+            </div>
+            <div style="display: flex; gap: 12px;">
+              <button class="btn-secondary" onclick="exportScanReport()">
+                <svg class="btn-svg" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <span>ส่งออกรายงานการสแกน</span>
+              </button>
+              <button class="btn-danger" id="btnCleanAll" onclick="cleanSelectedThreats()">
+                <svg class="btn-svg" viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+                <span>เริ่มลบทั้งหมดที่เลือก (Clean Threats)</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== TAB 2: VIRUS DEFINITIONS & UPDATE ==================== -->
+      <section id="tab-updates" class="tab-pane">
+        
+        <!-- Update Hero Banner -->
+        <div class="update-hero">
+          <div>
+            <h2 style="font-family: var(--font-cyber); font-size: 1.4rem; color: var(--primary-cyan); margin-bottom: 6px; display:flex; align-items:center; gap:8px;">
+              <svg class="status-svg" viewBox="0 0 24 24" style="width:24px; height:24px; color:var(--primary-cyan);"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+              <span>ศูนย์อัพเดทฐานข้อมูลไวรัส & มัลแวร์ (Virus Definitions)</span>
+            </h2>
+            <p style="color: var(--text-muted); font-size: 0.85rem; max-width: 600px;">
+              แก้ปัญหาล้างไวรัสไม่หมดด้วยระบบอัพเดทฐานข้อมูลอัตโนมัติ ตรวจจับโทรจันธนาคารตัวใหม่, แอพหลอกคืนเงินค่าไฟ, แอพตำรวจไซเบอร์ปลอม, และ RAT ควบคุมหน้าจอระยะไกล 2026
+            </p>
+          </div>
+          <div>
+            <button class="btn-primary" id="btnPerformUpdate" onclick="performVirusUpdate()" style="padding: 14px 26px; font-size: 1rem;">
+              <svg class="btn-svg" style="width:18px; height:18px;" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              <span>กดอัพเดทฐานข้อมูลไวรัสล่าสุด</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Database Stats Grid -->
+        <div class="stats-grid">
+          <div class="cyber-card" style="margin-bottom: 0;">
+            <div class="card-title">
+              <span><svg class="status-svg" viewBox="0 0 24 24" style="color:var(--accent-crimson);"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> ฐานข้อมูลไวรัสในระบบ</span>
+            </div>
+            <div style="font-size: 2.2rem; font-family: var(--font-cyber); font-weight: 700; color: var(--accent-crimson);" id="dbSignaturesCount">
+              2,571
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.78rem; margin-top: 4px;">
+              Signatures / รูปแบบมัลแวร์ที่รู้จัก
+            </div>
+          </div>
+
+          <div class="cyber-card" style="margin-bottom: 0;">
+            <div class="card-title">
+              <span><svg class="status-svg" viewBox="0 0 24 24" style="color:var(--accent-emerald);"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> แอพที่ได้รับการปกป้อง (Whitelist)</span>
+            </div>
+            <div style="font-size: 2.2rem; font-family: var(--font-cyber); font-weight: 700; color: var(--accent-emerald);" id="dbWhitelistCount">
+              234
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.78rem; margin-top: 4px;">
+              แอพธนาคารจริง, Google, LINE, OEM System
+            </div>
+          </div>
+
+          <div class="cyber-card" style="margin-bottom: 0;">
+            <div class="card-title">
+              <span><svg class="status-svg" viewBox="0 0 24 24" style="color:var(--primary-cyan);"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> ข้อมูลการอัพเดทล่าสุด</span>
+            </div>
+            <div style="font-size: 1.2rem; font-family: var(--font-mono); font-weight: 600; color: var(--primary-cyan); margin-top: 6px;" id="dbVersionText">
+              v2026.09.29
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.78rem; margin-top: 8px;" id="dbLastUpdatedText">
+              2026-09-29 20:00:00
+            </div>
+          </div>
+        </div>
+
+        <!-- Custom Signature & Whitelist Manager -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px;">
+          
+          <!-- Add Custom Malware -->
+          <div class="cyber-card">
+            <div class="card-title">
+              <span><svg class="status-svg" viewBox="0 0 24 24" style="color:var(--accent-crimson);"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg> เพิ่มรายการไวรัส/มัลแวร์ใหม่ (Custom Blacklist)</span>
+            </div>
+            <p style="color: var(--text-muted); font-size: 0.78rem; margin-bottom: 14px;">
+              หากคุณพบแอพแปลกปลอมใหม่ สามารถเพิ่มชื่อ Package เพื่อให้โปรแกรมตรวจจับและลบได้ทันที
+            </p>
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+              <input type="text" class="form-input" id="inpCustomMalwarePkg" placeholder="Package Name (เช่น com.scam.fakeapp)">
+              <input type="text" class="form-input" id="inpCustomMalwareName" placeholder="ชื่อแอพ / รายละเอียด (เช่น Fake Bank App)">
+              <select class="form-input" id="selCustomMalwareRisk">
+                <option value="CRITICAL">ระดับความเสี่ยง: CRITICAL (อันตรายสูงสุด / โทรจันดูดเงิน)</option>
+                <option value="HIGH" selected>ระดับความเสี่ยง: HIGH (ความเสี่ยงสูง / สปายแวร์)</option>
+                <option value="MEDIUM">ระดับความเสี่ยง: MEDIUM (แอดแวร์ / แอพขยะ)</option>
+              </select>
+              <button class="btn-danger" onclick="submitCustomMalware()" style="justify-content: center;">
+                <svg class="btn-svg" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                <span>บันทึกกฎไวรัสใหม่</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Add Custom Whitelist -->
+          <div class="cyber-card">
+            <div class="card-title">
+              <span><svg class="status-svg" viewBox="0 0 24 24" style="color:var(--accent-emerald);"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> เพิ่มแอพที่ต้องข้าม/ปกป้อง (Custom Whitelist)</span>
+            </div>
+            <p style="color: var(--text-muted); font-size: 0.78rem; margin-bottom: 14px;">
+              ป้องกันการลบแอพสำคัญ เช่น แอพองค์กร หรือแอพเฉพาะทางของคุณ
+            </p>
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+              <input type="text" class="form-input" id="inpCustomWhitelistPkg" placeholder="Package Name (เช่น com.mycompany.app)">
+              <input type="text" class="form-input" id="inpCustomWhitelistName" placeholder="ชื่อแอพ (เช่น My Company App)">
+              <input type="text" class="form-input" id="inpCustomWhitelistCat" placeholder="หมวดหมู่ (เช่น Custom Enterprise App)">
+              <button class="btn-primary" onclick="submitCustomWhitelist()" style="justify-content: center;">
+                <svg class="btn-svg" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <span>บันทึกลงรายการปกป้อง</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Import / Export Database -->
+        <div class="cyber-card" style="margin-top: 20px;">
+          <div class="card-title">
+            <span><svg class="status-svg" viewBox="0 0 24 24" style="color:var(--primary-cyan);"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg> นำเข้า / ส่งออกฐานข้อมูล (Backup & Share Definitions)</span>
+          </div>
+          <div style="display: flex; gap: 12px;">
+            <button class="btn-secondary" onclick="exportDefinitions()">
+              <svg class="btn-svg" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span>Export Virus Database (JSON)</span>
+            </button>
+            <button class="btn-secondary" onclick="alert('ฐานข้อมูลเวอร์ชั่นล่าสุดถูกซิงค์กับ Local Engine เรียบร้อยแล้ว')">
+              <svg class="btn-svg" viewBox="0 0 24 24"><path d="M23 4v6h-6M1 20v-6h6M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+              <span>Sync Local Database</span>
+            </button>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ==================== TAB 3: DEVICE TOOLS & HARDENING ==================== -->
+      <section id="tab-device" class="tab-pane">
+        
+        <div class="cyber-card">
+          <div class="card-title">
+            <span><svg class="status-svg" viewBox="0 0 24 24" style="color:var(--primary-cyan);"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg> ข้อมูลเชิงลึกของอุปกรณ์ที่เชื่อมต่อ (Device Telemetry)</span>
+          </div>
+          
+          <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;" id="deviceInfoGrid">
+            <div class="scan-card">
+              <div style="color: var(--text-dim); font-size: 0.75rem;">ยี่ห้อ (Brand)</div>
+              <div style="font-size: 1.1rem; font-weight: 700; color: var(--primary-cyan);" id="devInfoBrand">-</div>
+            </div>
+            <div class="scan-card">
+              <div style="color: var(--text-dim); font-size: 0.75rem;">รุ่น (Model)</div>
+              <div style="font-size: 1.1rem; font-weight: 700; color: var(--text-main);" id="devInfoModel">-</div>
+            </div>
+            <div class="scan-card">
+              <div style="color: var(--text-dim); font-size: 0.75rem;">Android Version</div>
+              <div style="font-size: 1.1rem; font-weight: 700; color: var(--accent-emerald);" id="devInfoAndroid">-</div>
+            </div>
+            <div class="scan-card">
+              <div style="color: var(--text-dim); font-size: 0.75rem;">Serial Number</div>
+              <div style="font-size: 0.95rem; font-weight: 600; font-family: var(--font-mono); color: var(--text-muted);" id="devInfoSerial">-</div>
+            </div>
+            <div class="scan-card">
+              <div style="color: var(--text-dim); font-size: 0.75rem;">Build ID</div>
+              <div style="font-size: 0.85rem; font-family: var(--font-mono); color: var(--text-muted);" id="devInfoBuild">-</div>
+            </div>
+            <div class="scan-card">
+              <div style="color: var(--text-dim); font-size: 0.75rem;">Security Patch</div>
+              <div style="font-size: 0.95rem; color: var(--text-main);" id="devInfoPatch">-</div>
+            </div>
+            <div class="scan-card">
+              <div style="color: var(--text-dim); font-size: 0.75rem;">สถานะ Root</div>
+              <div style="font-size: 1.1rem; font-weight: 700; color: var(--accent-amber);" id="devInfoRoot">-</div>
+            </div>
+            <div class="scan-card">
+              <div style="color: var(--text-dim); font-size: 0.75rem;">แบตเตอรี่ (Battery)</div>
+              <div style="font-size: 1.1rem; font-weight: 700; color: var(--accent-emerald);" id="devInfoBattery">-</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Security Hardening Section -->
+        <div class="cyber-card">
+          <div class="card-title">
+            <span><svg class="status-svg" viewBox="0 0 24 24" style="color:var(--accent-amber);"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> ปิดการเชื่อมต่อและเพิ่มความปลอดภัยมือถือ (Post-Cleaning Hardening)</span>
+          </div>
+          <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 16px;">
+            หลังจากล้างไวรัสเสร็จสิ้น แนะนำให้ปิดโหมดนักพัฒนาและปิด USB Debugging ทันที เพื่อป้องกันการเชื่อมต่อหรือแฮกซ้ำ
+          </p>
+          
+          <div style="display: flex; gap: 16px;">
+            <button class="btn-danger" onclick="triggerDisableAdb()" style="padding: 12px 20px;">
+              <svg class="btn-svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+              <span>1. ปิด USB Debugging (Disable ADB)</span>
+            </button>
+            <button class="btn-danger" onclick="triggerDisableDevSettings()" style="padding: 12px 20px;">
+              <svg class="btn-svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+              <span>2. ปิดเมนูนักพัฒนา (Disable Developer Options)</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Power Controls -->
+        <div class="cyber-card">
+          <div class="card-title">
+            <span><svg class="status-svg" viewBox="0 0 24 24" style="color:var(--primary-cyan);"><path d="M18.36 6.64a9 9 0 1 1-12.73 0"/><line x1="12" y1="2" x2="12" y2="12"/></svg> ควบคุมการทำงานของเครื่อง (Power Actions)</span>
+          </div>
+          <div style="display: flex; gap: 12px;">
+            <button class="btn-secondary" onclick="triggerReboot('normal')">
+              <svg class="btn-svg" viewBox="0 0 24 24"><path d="M23 4v6h-6M1 20v-6h6M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+              <span>รีสตาร์ทเครื่อง (Reboot Normal)</span>
+            </button>
+            <button class="btn-secondary" onclick="triggerReboot('recovery')">
+              <svg class="btn-svg" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              <span>เข้าโหมด Recovery</span>
+            </button>
+            <button class="btn-secondary" onclick="triggerReboot('bootloader')">
+              <svg class="btn-svg" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              <span>เข้าโหมด Fastboot / Bootloader</span>
+            </button>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ==================== TAB 4: APP MANAGER ==================== -->
+      <section id="tab-apps" class="tab-pane">
+        <div class="cyber-card">
+          <div class="card-title">
+            <span><svg class="status-svg" viewBox="0 0 24 24" style="color:var(--primary-cyan);"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg> จัดการแอพพลิเคชันในเครื่องมือถือ (Application Manager)</span>
+            <div style="display: flex; gap: 8px;">
+              <input type="text" class="form-input" id="inpSearchApps" placeholder="ค้นหาแอพหรือ package..." oninput="filterAppManagerList()" style="width: 250px;">
+              <button class="btn-primary" onclick="loadAppManagerList()">
+                <svg class="btn-svg" viewBox="0 0 24 24"><path d="M23 4v6h-6M1 20v-6h6M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+                <span>โหลดรายชื่อแอพ</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- App category pills -->
+          <div style="display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap;">
+            <button class="btn-secondary" id="btnFilterUser" onclick="setAppFilter('user')" style="padding: 4px 12px; font-size: 0.78rem; background: var(--primary-cyan); color: #fff;">User Apps (แอพผู้ใช้)</button>
+            <button class="btn-secondary" id="btnFilterSystem" onclick="setAppFilter('system')" style="padding: 4px 12px; font-size: 0.78rem;">System Apps (แอพระบบ)</button>
+            <button class="btn-secondary" id="btnFilterDisabled" onclick="setAppFilter('disabled')" style="padding: 4px 12px; font-size: 0.78rem;">Disabled Apps (แอพที่ถูกปิด)</button>
+            <button class="btn-secondary" id="btnFilterNonEssential" onclick="setAppFilter('non_essential')" style="padding: 4px 12px; font-size: 0.78rem; border-color: #f59e0b; color: #d97706;">🧹 แอพทั่วไป (ไม่ใช่ธนาคาร/โซเชียล)</button>
+          </div>
+
+          <div class="threats-table-container" style="max-height: 480px;">
+            <table class="threat-table">
+              <thead>
+                <tr>
+                  <th>Package Name</th>
+                  <th>ประเภท</th>
+                  <th>สถานะ</th>
+                  <th style="width: 140px; text-align: right;">การดำเนินการ</th>
+                </tr>
+              </thead>
+              <tbody id="appManagerTableBody">
+                <tr>
+                  <td colspan="4" style="text-align: center; color: var(--text-dim); padding: 30px;">
+                    กดปุ่ม "โหลดรายชื่อแอพ" เพื่อดึงข้อมูลแอพทั้งหมดในเครื่อง
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== TAB 5: DRIVERS & USB GUIDE ==================== -->
+      <section id="tab-drivers" class="tab-pane">
+        
+        <!-- Driver Installers -->
+        <div class="cyber-card">
+          <div class="card-title">
+            <span><svg class="status-svg" viewBox="0 0 24 24" style="color:var(--primary-cyan);"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/><circle cx="12" cy="2" r="1.5"/><rect x="4.5" y="19" width="3" height="3"/></svg> ติดตั้งไดร์เวอร์เชื่อมต่อมือถือ (USB Drivers Installer)</span>
+          </div>
+          <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 16px;">
+            หากคอมพิวเตอร์มองไม่เห็นมือถือ ให้ติดตั้งไดร์เวอร์ด้านล่างนี้ (คลิกเพื่อเริ่มติดตั้งทันที)
+          </p>
+          <div style="display: flex; gap: 16px;">
+            <button class="btn-primary" onclick="installSamsungDriver()" style="padding: 12px 24px;">
+              <svg class="btn-svg" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+              <span>ติดตั้ง SAMSUNG USB Mobile Driver</span>
+            </button>
+            <button class="btn-primary" onclick="installUniversalAdbDriver()" style="padding: 12px 24px;">
+              <svg class="btn-svg" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+              <span>ติดตั้ง Universal ADB Driver Setup (MSI)</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Visual Step-by-Step USB Debugging Guide -->
+        <div class="cyber-card">
+          <div class="card-title">
+            <span><svg class="status-svg" viewBox="0 0 24 24" style="color:var(--primary-cyan);"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> วิธีเปิด USB Debugging แยกตามรุ่นและยี่ห้อมือถือ</span>
+          </div>
+          
+          <div style="display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap;">
+            <button class="btn-secondary" onclick="showGuide('samsung')">Samsung</button>
+            <button class="btn-secondary" onclick="showGuide('xiaomi')">Xiaomi / Redmi / POCO</button>
+            <button class="btn-secondary" onclick="showGuide('oppo')">OPPO / Realme</button>
+            <button class="btn-secondary" onclick="showGuide('vivo')">Vivo / iQOO</button>
+            <button class="btn-secondary" onclick="showGuide('huawei')">Huawei / Honor</button>
+            <button class="btn-secondary" onclick="showGuide('infinix')">Infinix / Tecno</button>
+          </div>
+
+          <div id="guideContentBox" style="background: #f8fafc; border: 1px solid var(--border-color); border-radius: 8px; padding: 20px;">
+            <h3 style="color: var(--primary-cyan); margin-bottom: 10px;" id="guideBrandTitle">ขั้นตอนการเปิด USB Debugging (ทั่วไป)</h3>
+            <ol style="color: var(--text-main); font-size: 0.88rem; line-height: 1.8; margin-left: 20px;" id="guideStepsList">
+              <li>ไปที่ <b>การตั้งค่า (Settings)</b> &gt; <b>เกี่ยวกับโทรศัพท์ (About Phone)</b></li>
+              <li>แตะที่ <b>หมายเลขบิลด์ (Build Number)</b> รัวๆ 7 ครั้ง จนขึ้นว่า "คุณเป็นนักพัฒนาแล้ว"</li>
+              <li>ย้อนกลับมาที่ <b>การตั้งค่าเพิ่มเติม (System / Additional Settings)</b> &gt; <b>ตัวเลือกสำหรับนักพัฒนา (Developer Options)</b></li>
+              <li>เปิดสวิตช์ <b>การแก้จุดบกพร่อง USB (USB Debugging)</b></li>
+              <li>เสียบสายต่อเข้าคอมพิวเตอร์ และดูที่หน้าจอมือถือ กดยอมรับ "อนุญาตเสมอ (Always Allow)"</li>
+            </ol>
+          </div>
+
+          <div class="guide-img-container" style="margin-top: 16px;">
+            <img src="assets/images/USB_DEBUG.png" alt="USB Debugging Guide" onerror="this.style.display='none'">
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ==================== TAB 6: LIVE LOGS ==================== -->
+      <section id="tab-logs" class="tab-pane">
+        <div class="cyber-card">
+          <div class="card-title">
+            <span><svg class="status-svg" viewBox="0 0 24 24" style="color:var(--primary-cyan);"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg> บันทึกการทำงานระบบแบบเรียลไทม์ (Live Console Logs)</span>
+            <div style="display: flex; gap: 8px; align-items: center;">
+              <label style="font-size: 0.78rem; color: var(--text-muted); display: flex; align-items: center; gap: 4px; cursor: pointer;">
+                <input type="checkbox" id="chkAutoScroll" checked> เลื่อนลงอัตโนมัติ (Auto-scroll)
+              </label>
+              <button class="btn-secondary" onclick="clearLiveLogs()" style="padding: 4px 10px; font-size: 0.78rem;">
+                <svg class="btn-svg" viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+                <span>ล้างหน้าจอ</span>
+              </button>
+              <button class="btn-secondary" onclick="exportLogsFile()" style="padding: 4px 10px; font-size: 0.78rem;">
+                <svg class="btn-svg" viewBox="0 0 24 24"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+                <span>บันทึกไฟล์ logs.txt</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="terminal-window" id="terminalWindow">
+            <div class="log-line INFO">
+              <span class="log-time">[2026-09-29 20:30:00]</span>
+              <span>- APKs Guard Pro 289 Initialized & Ready.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== TAB 7: SETTINGS & ABOUT ==================== -->
+      <section id="tab-settings" class="tab-pane">
+        <div class="cyber-card">
+          <div class="card-title">
+            <span><svg class="status-svg" viewBox="0 0 24 24" style="color:var(--primary-cyan);"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg> การตั้งค่าระบบ (Application Preferences)</span>
+          </div>
+          
+          <div style="flex-direction: column; display: flex; gap: 16px;">
+            <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+              <input type="checkbox" id="cfgAutoUpdate" checked onchange="updateAppConfig()">
+              <div>
+                <div style="font-weight: 600;">ตรวจสอบอัพเดทฐานข้อมูลไวรัสอัตโนมัติเมื่อเปิดโปรแกรม (Auto Check Updates)</div>
+                <div style="font-size: 0.75rem; color: var(--text-muted);">รับการแจ้งเตือนทันทีเมื่อมีข้อมูลมัลแวร์ตัวใหม่</div>
+              </div>
+            </label>
+
+            <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+              <input type="checkbox" id="cfgAutoScan" checked onchange="updateAppConfig()">
+              <div>
+                <div style="font-weight: 600;">เริ่มสแกนอัตโนมัติทันทีที่เสียบสายมือถือ (Auto Scan on Connect)</div>
+                <div style="font-size: 0.75rem; color: var(--text-muted);">เริ่มตรวจสอบความปลอดภัยทันทีเมื่อตรวจพบอุปกรณ์</div>
+              </div>
+            </label>
+
+            <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+              <input type="checkbox" id="cfgSmartCheck" checked onchange="updateAppConfig()">
+              <div>
+                <div style="font-weight: 600;">เปิดใช้งานการตรวจสอบอัจฉริยะ Smart Check (Heuristics Engine)</div>
+                <div style="font-size: 0.75rem; color: var(--text-muted);">ตรวจจับแอพติดตั้งนอก Store และสิทธิ์การเข้าถึงที่เป็นอันตราย</div>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="cyber-card">
+          <div class="card-title">
+            <span><svg class="status-svg" viewBox="0 0 24 24" style="color:var(--primary-cyan);"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg> เกี่ยวกับโปรแกรม (About APKs Guard Pro 289)</span>
+          </div>
+          <div style="display: flex; gap: 20px; align-items: center;">
+            <div style="width: 80px; height: 80px; flex-shrink: 0;">
+              <svg viewBox="0 0 512 512" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <radialGradient id="bgGradAbout" cx="50%" cy="50%" r="50%" fx="30%" fy="30%">
+                    <stop offset="0%" stop-color="#162032" />
+                    <stop offset="60%" stop-color="#0b101b" />
+                    <stop offset="100%" stop-color="#05080e" />
+                  </radialGradient>
+                  <linearGradient id="shieldCyanAbout" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#00f2fe" />
+                    <stop offset="50%" stop-color="#4facfe" />
+                    <stop offset="100%" stop-color="#0066fe" />
+                  </linearGradient>
+                  <linearGradient id="shieldEmeraldAbout" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#00f5a0" />
+                    <stop offset="100%" stop-color="#00d9e9" />
+                  </linearGradient>
+                </defs>
+                <rect width="512" height="512" rx="110" fill="url(#bgGradAbout)" stroke="#1f293d" stroke-width="6" />
+                <path d="M 256 65 C 365 65 410 115 410 210 C 410 330 320 405 256 445 C 192 405 102 330 102 210 C 102 115 147 65 256 65 Z" fill="#0b1322" stroke="url(#shieldCyanAbout)" stroke-width="12" />
+                <path d="M 256 95 C 340 95 375 135 375 210 C 375 305 305 370 256 405 C 207 370 137 305 137 210 C 137 135 172 95 256 95 Z" fill="#111d33" stroke="url(#shieldEmeraldAbout)" stroke-width="4" />
+                <g>
+                  <line x1="220" y1="160" x2="202" y2="132" stroke="#00f5a0" stroke-width="7" stroke-linecap="round" />
+                  <line x1="292" y1="160" x2="310" y2="132" stroke="#00f5a0" stroke-width="7" stroke-linecap="round" />
+                  <path d="M 188 205 C 188 165 215 155 256 155 C 297 155 324 165 324 205 Z" fill="url(#shieldEmeraldAbout)" />
+                  <circle cx="225" cy="185" r="6" fill="#0b1322" />
+                  <circle cx="287" cy="185" r="6" fill="#0b1322" />
+                  <path d="M 188 218 H 324 V 275 C 324 315 285 345 256 360 C 227 345 188 315 188 275 Z" fill="#0d253f" stroke="#00f2fe" stroke-width="4" />
+                  <path d="M 220 270 L 245 295 L 298 235" fill="none" stroke="url(#shieldEmeraldAbout)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+                <g transform="translate(320, 75)">
+                  <rect width="90" height="34" rx="10" fill="#ff1744" stroke="#ffffff" stroke-width="2" />
+                  <text x="45" y="24" fill="#ffffff" font-family="'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="20" text-anchor="middle">289</text>
+                </g>
+                <text x="256" y="475" fill="#00f2fe" font-family="'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="24" text-anchor="middle" letter-spacing="4">APKs GUARD PRO</text>
+              </svg>
+            </div>
+            <div>
+              <h3 style="font-family: var(--font-cyber); color: var(--primary-cyan); font-size: 1.2rem;">APKs Guard Pro 289</h3>
+              <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 4px;">
+                Advanced Android Antivirus & Threat Neutralizer Engine for Windows<br>
+                พัฒนาเพื่อแก้ปัญหามัลแวร์และโทรจันดูดเงินในประเทศไทยและสากล พร้อมฐานข้อมูลอัพเดทสม่ำเสมอ
+              </p>
+              <div style="margin-top: 8px; font-size: 0.78rem; color: var(--text-dim);">
+                Version 4.0.0 Pro Enterprise | Security Research Edition
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

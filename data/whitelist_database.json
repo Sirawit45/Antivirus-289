@@ -1,0 +1,1178 @@
+{
+  "version": "2026.09.29",
+  "updated_at": "2026-09-29 20:38:27",
+  "total_whitelisted": 234,
+  "author": "Antivirus 289 Security Research Lab",
+  "whitelist": {
+    "com.kasikorn.retail.mbanking.wap": {
+      "pkg": "com.kasikorn.retail.mbanking.wap",
+      "name": "K PLUS (กสิกรไทย)",
+      "category": "Official Thai Banking"
+    },
+    "com.scb.phone": {
+      "pkg": "com.scb.phone",
+      "name": "SCB EASY (ไทยพาณิชย์)",
+      "category": "Official Thai Banking"
+    },
+    "ktbcs.netbank": {
+      "pkg": "ktbcs.netbank",
+      "name": "Krungthai NEXT (กรุงไทย)",
+      "category": "Official Thai Banking"
+    },
+    "com.ktb.customer.qr": {
+      "pkg": "com.ktb.customer.qr",
+      "name": "Krungthai Paotang (เป๋าตัง กรุงไทย)",
+      "category": "Official Thai Banking / Gov"
+    },
+    "com.krungsri.kma": {
+      "pkg": "com.krungsri.kma",
+      "name": "KMA Krungsri (กรุงศรี)",
+      "category": "Official Thai Banking"
+    },
+    "com.ttbbank.oneapp": {
+      "pkg": "com.ttbbank.oneapp",
+      "name": "ttb touch (ทีเอ็มบีธนชาต)",
+      "category": "Official Thai Banking"
+    },
+    "com.bbl.mobilebanking": {
+      "pkg": "com.bbl.mobilebanking",
+      "name": "Bangkok Bank Mobile Banking (กรุงเทพ)",
+      "category": "Official Thai Banking"
+    },
+    "com.infraset.mymo": {
+      "pkg": "com.infraset.mymo",
+      "name": "MyMo by GSB (ออมสิน)",
+      "category": "Official Thai Banking"
+    },
+    "com.baac.baacapp": {
+      "pkg": "com.baac.baacapp",
+      "name": "BAAC Mobile (ธ.ก.ส.)",
+      "category": "Official Thai Banking"
+    },
+    "com.kkpfg.dime": {
+      "pkg": "com.kkpfg.dime",
+      "name": "Dime! by KKP",
+      "category": "Official Thai Banking"
+    },
+    "com.tmn_android": {
+      "pkg": "com.tmn_android",
+      "name": "TrueMoney Wallet",
+      "category": "Official Thai E-Wallet"
+    },
+    "com.TMBTOUCH.PRODUCTION": {
+      "pkg": "com.TMBTOUCH.PRODUCTION",
+      "name": "TMB Touch Legacy",
+      "category": "Official Thai Banking"
+    },
+    "jp.naver.line.android": {
+      "pkg": "jp.naver.line.android",
+      "name": "LINE",
+      "category": "Communication"
+    },
+    "com.facebook.katana": {
+      "pkg": "com.facebook.katana",
+      "name": "Facebook",
+      "category": "Social"
+    },
+    "com.facebook.orca": {
+      "pkg": "com.facebook.orca",
+      "name": "Messenger",
+      "category": "Social"
+    },
+    "com.instagram.android": {
+      "pkg": "com.instagram.android",
+      "name": "Instagram",
+      "category": "Social"
+    },
+    "com.instagram.barcelona": {
+      "pkg": "com.instagram.barcelona",
+      "name": "Threads",
+      "category": "Social"
+    },
+    "com.ss.android.ugc.trill": {
+      "pkg": "com.ss.android.ugc.trill",
+      "name": "TikTok",
+      "category": "Social"
+    },
+    "com.whatsapp": {
+      "pkg": "com.whatsapp",
+      "name": "WhatsApp",
+      "category": "Communication"
+    },
+    "org.telegram.messenger": {
+      "pkg": "org.telegram.messenger",
+      "name": "Telegram",
+      "category": "Communication"
+    },
+    "com.twitter.android": {
+      "pkg": "com.twitter.android",
+      "name": "X (Twitter)",
+      "category": "Social"
+    },
+    "com.discord": {
+      "pkg": "com.discord",
+      "name": "Discord",
+      "category": "Communication"
+    },
+    "com.shopee.th": {
+      "pkg": "com.shopee.th",
+      "name": "Shopee TH",
+      "category": "E-Commerce"
+    },
+    "com.lazada.android": {
+      "pkg": "com.lazada.android",
+      "name": "Lazada",
+      "category": "E-Commerce"
+    },
+    "com.grabtaxi.passenger": {
+      "pkg": "com.grabtaxi.passenger",
+      "name": "Grab",
+      "category": "Ride & Delivery"
+    },
+    "com.global.foodpanda.android": {
+      "pkg": "com.global.foodpanda.android",
+      "name": "foodpanda",
+      "category": "Food Delivery"
+    },
+    "th.co.cplusnetwork.seven": {
+      "pkg": "th.co.cplusnetwork.seven",
+      "name": "7-Eleven TH",
+      "category": "Retail"
+    },
+    "com.ais.mimo.eservice": {
+      "pkg": "com.ais.mimo.eservice",
+      "name": "myAIS",
+      "category": "Telecom"
+    },
+    "th.co.truemoveh.iservice": {
+      "pkg": "th.co.truemoveh.iservice",
+      "name": "True iService",
+      "category": "Telecom"
+    },
+    "com.dtac.mydtac": {
+      "pkg": "com.dtac.mydtac",
+      "name": "dtac app",
+      "category": "Telecom"
+    },
+    "com.makromangoapp.production": {
+      "pkg": "com.makromangoapp.production",
+      "name": "Makro PRO",
+      "category": "Retail"
+    },
+    "com.netflix.mediaclient": {
+      "pkg": "com.netflix.mediaclient",
+      "name": "Netflix",
+      "category": "Entertainment"
+    },
+    "com.spotify.music": {
+      "pkg": "com.spotify.music",
+      "name": "Spotify",
+      "category": "Entertainment"
+    },
+    "com.microsoft.skydrive": {
+      "pkg": "com.microsoft.skydrive",
+      "name": "Microsoft OneDrive",
+      "category": "Productivity"
+    },
+    "com.azure.authenticator": {
+      "pkg": "com.azure.authenticator",
+      "name": "Microsoft Authenticator",
+      "category": "Security"
+    },
+    "com.google.android.gms": {
+      "pkg": "com.google.android.gms",
+      "name": "Google Play Services",
+      "category": "Google System"
+    },
+    "com.android.vending": {
+      "pkg": "com.android.vending",
+      "name": "Google Play Store",
+      "category": "Google System"
+    },
+    "com.google.android.apps.adm": {
+      "pkg": "com.google.android.apps.adm",
+      "name": "Google Find My Device",
+      "category": "Google System"
+    },
+    "com.google.android.apps.chromecast.app": {
+      "pkg": "com.google.android.apps.chromecast.app",
+      "name": "Google Home",
+      "category": "Google Core"
+    },
+    "com.google.android.apps.docs": {
+      "pkg": "com.google.android.apps.docs",
+      "name": "Google Docs / Drive",
+      "category": "Google Core"
+    },
+    "com.google.android.apps.googleassistant": {
+      "pkg": "com.google.android.apps.googleassistant",
+      "name": "Google Assistant",
+      "category": "Google Core"
+    },
+    "com.google.android.apps.nbu.files": {
+      "pkg": "com.google.android.apps.nbu.files",
+      "name": "Files by Google",
+      "category": "Google Core"
+    },
+    "com.google.android.apps.photos": {
+      "pkg": "com.google.android.apps.photos",
+      "name": "Google Photos",
+      "category": "Google Core"
+    },
+    "com.google.android.apps.podcasts": {
+      "pkg": "com.google.android.apps.podcasts",
+      "name": "Google Podcasts",
+      "category": "Google Core"
+    },
+    "com.google.android.apps.subscriptions.red": {
+      "pkg": "com.google.android.apps.subscriptions.red",
+      "name": "Google One",
+      "category": "Google Core"
+    },
+    "com.google.android.apps.translate": {
+      "pkg": "com.google.android.apps.translate",
+      "name": "Google Translate",
+      "category": "Google Core"
+    },
+    "com.google.android.apps.walletnfcrel": {
+      "pkg": "com.google.android.apps.walletnfcrel",
+      "name": "Google Wallet",
+      "category": "Google Core"
+    },
+    "com.google.android.apps.youtube.music": {
+      "pkg": "com.google.android.apps.youtube.music",
+      "name": "YouTube Music",
+      "category": "Google Core"
+    },
+    "com.google.android.youtube": {
+      "pkg": "com.google.android.youtube",
+      "name": "YouTube",
+      "category": "Google Core"
+    },
+    "com.google.android.contactkeys": {
+      "pkg": "com.google.android.contactkeys",
+      "name": "Google Contact Keys",
+      "category": "Google System"
+    },
+    "com.google.android.safetycore": {
+      "pkg": "com.google.android.safetycore",
+      "name": "Android Safety Core",
+      "category": "Google System"
+    },
+    "com.google.android.verifier": {
+      "pkg": "com.google.android.verifier",
+      "name": "Google Play Protect Verifier",
+      "category": "Google System"
+    },
+    "com.google.android.videos": {
+      "pkg": "com.google.android.videos",
+      "name": "Google TV",
+      "category": "Google Core"
+    },
+    "com.android.deskclock": {
+      "pkg": "com.android.deskclock",
+      "name": "Android Clock",
+      "category": "System OEM"
+    },
+    "com.android.soundrecorder": {
+      "pkg": "com.android.soundrecorder",
+      "name": "Android Sound Recorder",
+      "category": "System OEM"
+    },
+    "com.xiaomi.midrop": {
+      "pkg": "com.xiaomi.midrop",
+      "name": "ShareMe (Xiaomi)",
+      "category": "Xiaomi OEM"
+    },
+    "com.xiaomi.scanner": {
+      "pkg": "com.xiaomi.scanner",
+      "name": "Xiaomi Scanner",
+      "category": "Xiaomi OEM"
+    },
+    "com.miui.calculator": {
+      "pkg": "com.miui.calculator",
+      "name": "MIUI Calculator",
+      "category": "Xiaomi OEM"
+    },
+    "com.miui.weather2": {
+      "pkg": "com.miui.weather2",
+      "name": "MIUI Weather",
+      "category": "Xiaomi OEM"
+    },
+    "com.miui.virtualsim": {
+      "pkg": "com.miui.virtualsim",
+      "name": "MIUI Virtual SIM",
+      "category": "Xiaomi OEM"
+    },
+    "com.miui.screenrecorder": {
+      "pkg": "com.miui.screenrecorder",
+      "name": "MIUI Screen Recorder",
+      "category": "Xiaomi OEM"
+    },
+    "com.miui.huanji": {
+      "pkg": "com.miui.huanji",
+      "name": "Mi Mover",
+      "category": "Xiaomi OEM"
+    },
+    "com.miui.mediaeditor": {
+      "pkg": "com.miui.mediaeditor",
+      "name": "MIUI Gallery Editor",
+      "category": "Xiaomi OEM"
+    },
+    "com.miui.notes": {
+      "pkg": "com.miui.notes",
+      "name": "MIUI Notes",
+      "category": "Xiaomi OEM"
+    },
+    "com.xiaomi.calendar": {
+      "pkg": "com.xiaomi.calendar",
+      "name": "Mi Calendar",
+      "category": "Xiaomi OEM"
+    },
+    "com.miui.compass": {
+      "pkg": "com.miui.compass",
+      "name": "MIUI Compass",
+      "category": "Xiaomi OEM"
+    },
+    "com.xiaomi.smarthome": {
+      "pkg": "com.xiaomi.smarthome",
+      "name": "Mi Home",
+      "category": "Xiaomi OEM"
+    },
+    "com.miui.android.fashiongallery": {
+      "pkg": "com.miui.android.fashiongallery",
+      "name": "Glance / Wallpaper Carousel",
+      "category": "Xiaomi OEM"
+    },
+    "com.amazon.appmanager": {
+      "pkg": "com.amazon.appmanager",
+      "name": "Amazon App Manager",
+      "category": "System Utility"
+    },
+    "com.bd.nproject": {
+      "pkg": "com.bd.nproject",
+      "name": "Protected App: com.bd.nproject",
+      "category": "Protected User / System App"
+    },
+    "com.booking": {
+      "pkg": "com.booking",
+      "name": "Protected App: com.booking",
+      "category": "Protected User / System App"
+    },
+    "com.doonung.activity": {
+      "pkg": "com.doonung.activity",
+      "name": "Protected App: com.doonung.activity",
+      "category": "Protected User / System App"
+    },
+    "com.iqiyi.i18n": {
+      "pkg": "com.iqiyi.i18n",
+      "name": "Protected App: com.iqiyi.i18n",
+      "category": "Protected User / System App"
+    },
+    "com.king.candycrushsaga": {
+      "pkg": "com.king.candycrushsaga",
+      "name": "Protected App: com.king.candycrushsaga",
+      "category": "Protected User / System App"
+    },
+    "com.krungsri.uchoose": {
+      "pkg": "com.krungsri.uchoose",
+      "name": "Protected App: com.krungsri.uchoose",
+      "category": "Protected User / System App"
+    },
+    "com.linkedin.android": {
+      "pkg": "com.linkedin.android",
+      "name": "Protected App: com.linkedin.android",
+      "category": "Protected User / System App"
+    },
+    "com.microsoft.office.officehubrow": {
+      "pkg": "com.microsoft.office.officehubrow",
+      "name": "Protected App: com.microsoft.office.officehubrow",
+      "category": "Protected User / System App"
+    },
+    "com.microsoft.office.outlook": {
+      "pkg": "com.microsoft.office.outlook",
+      "name": "Protected App: com.microsoft.office.outlook",
+      "category": "Protected User / System App"
+    },
+    "com.samsung.android.app.notes": {
+      "pkg": "com.samsung.android.app.notes",
+      "name": "Protected App: com.samsung.android.app.notes",
+      "category": "Protected User / System App"
+    },
+    "com.samsung.android.app.notes.addons": {
+      "pkg": "com.samsung.android.app.notes.addons",
+      "name": "Protected App: com.samsung.android.app.notes.addons",
+      "category": "Protected User / System App"
+    },
+    "com.samsung.android.app.spage": {
+      "pkg": "com.samsung.android.app.spage",
+      "name": "Protected App: com.samsung.android.app.spage",
+      "category": "Protected User / System App"
+    },
+    "com.samsung.android.app.tips": {
+      "pkg": "com.samsung.android.app.tips",
+      "name": "Protected App: com.samsung.android.app.tips",
+      "category": "Protected User / System App"
+    },
+    "com.samsung.android.app.watchmanager": {
+      "pkg": "com.samsung.android.app.watchmanager",
+      "name": "Protected App: com.samsung.android.app.watchmanager",
+      "category": "Protected User / System App"
+    },
+    "com.samsung.android.arzone": {
+      "pkg": "com.samsung.android.arzone",
+      "name": "Protected App: com.samsung.android.arzone",
+      "category": "Protected User / System App"
+    },
+    "com.samsung.android.galaxy": {
+      "pkg": "com.samsung.android.galaxy",
+      "name": "Protected App: com.samsung.android.galaxy",
+      "category": "Protected User / System App"
+    },
+    "com.samsung.android.oneconnect": {
+      "pkg": "com.samsung.android.oneconnect",
+      "name": "Protected App: com.samsung.android.oneconnect",
+      "category": "Protected User / System App"
+    },
+    "com.samsung.android.privateshare": {
+      "pkg": "com.samsung.android.privateshare",
+      "name": "Protected App: com.samsung.android.privateshare",
+      "category": "Protected User / System App"
+    },
+    "com.samsung.android.visualars": {
+      "pkg": "com.samsung.android.visualars",
+      "name": "Protected App: com.samsung.android.visualars",
+      "category": "Protected User / System App"
+    },
+    "com.samsung.android.voc": {
+      "pkg": "com.samsung.android.voc",
+      "name": "Protected App: com.samsung.android.voc",
+      "category": "Protected User / System App"
+    },
+    "com.samsung.sree": {
+      "pkg": "com.samsung.sree",
+      "name": "Protected App: com.samsung.sree",
+      "category": "Protected User / System App"
+    },
+    "com.sec.android.app.clockpackage": {
+      "pkg": "com.sec.android.app.clockpackage",
+      "name": "Protected App: com.sec.android.app.clockpackage",
+      "category": "Protected User / System App"
+    },
+    "com.sec.android.app.kidshome": {
+      "pkg": "com.sec.android.app.kidshome",
+      "name": "Protected App: com.sec.android.app.kidshome",
+      "category": "Protected User / System App"
+    },
+    "com.sec.android.app.popupcalculator": {
+      "pkg": "com.sec.android.app.popupcalculator",
+      "name": "Protected App: com.sec.android.app.popupcalculator",
+      "category": "Protected User / System App"
+    },
+    "com.sec.android.app.sbrowser": {
+      "pkg": "com.sec.android.app.sbrowser",
+      "name": "Protected App: com.sec.android.app.sbrowser",
+      "category": "Protected User / System App"
+    },
+    "com.sec.android.app.shealth": {
+      "pkg": "com.sec.android.app.shealth",
+      "name": "Protected App: com.sec.android.app.shealth",
+      "category": "Protected User / System App"
+    },
+    "com.sec.android.app.voicenote": {
+      "pkg": "com.sec.android.app.voicenote",
+      "name": "Protected App: com.sec.android.app.voicenote",
+      "category": "Protected User / System App"
+    },
+    "com.shell.sitibv.shellgoplusindia": {
+      "pkg": "com.shell.sitibv.shellgoplusindia",
+      "name": "Protected App: com.shell.sitibv.shellgoplusindia",
+      "category": "Protected User / System App"
+    },
+    "com.tencent.qqlivei18n": {
+      "pkg": "com.tencent.qqlivei18n",
+      "name": "Protected App: com.tencent.qqlivei18n",
+      "category": "Protected User / System App"
+    },
+    "com.tvt.superliveplus": {
+      "pkg": "com.tvt.superliveplus",
+      "name": "Protected App: com.tvt.superliveplus",
+      "category": "Protected User / System App"
+    },
+    "th.co.dmap.smartGBOOK_TH1111": {
+      "pkg": "th.co.dmap.smartGBOOK_TH1111",
+      "name": "Protected App: th.co.dmap.smartGBOOK_TH1111",
+      "category": "Protected User / System App"
+    },
+    "th.co.the1.the1app": {
+      "pkg": "th.co.the1.the1app",
+      "name": "Protected App: th.co.the1.the1app",
+      "category": "Protected User / System App"
+    },
+    "th.go.doh.mflow": {
+      "pkg": "th.go.doh.mflow",
+      "name": "Protected App: th.go.doh.mflow",
+      "category": "Protected User / System App"
+    },
+    "th.go.dopa.bora.dims.ddopa": {
+      "pkg": "th.go.dopa.bora.dims.ddopa",
+      "name": "Protected App: th.go.dopa.bora.dims.ddopa",
+      "category": "Protected User / System App"
+    },
+    "th.or.dga.citizenportal": {
+      "pkg": "th.or.dga.citizenportal",
+      "name": "Protected App: th.or.dga.citizenportal",
+      "category": "Protected User / System App"
+    },
+    "com.sec.android.app": {
+      "pkg": "com.sec.android.app",
+      "name": "OEM System Package (com.sec.android)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.sec.android.provider": {
+      "pkg": "com.sec.android.provider",
+      "name": "OEM System Package (com.sec.android)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.sec.android.service": {
+      "pkg": "com.sec.android.service",
+      "name": "OEM System Package (com.sec.android)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.sec.android.system": {
+      "pkg": "com.sec.android.system",
+      "name": "OEM System Package (com.sec.android)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.sec.android.launcher": {
+      "pkg": "com.sec.android.launcher",
+      "name": "OEM System Package (com.sec.android)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.sec.android.camera": {
+      "pkg": "com.sec.android.camera",
+      "name": "OEM System Package (com.sec.android)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.sec.android.gallery": {
+      "pkg": "com.sec.android.gallery",
+      "name": "OEM System Package (com.sec.android)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.sec.android.settings": {
+      "pkg": "com.sec.android.settings",
+      "name": "OEM System Package (com.sec.android)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.sec.android.phone": {
+      "pkg": "com.sec.android.phone",
+      "name": "OEM System Package (com.sec.android)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.sec.android.mms": {
+      "pkg": "com.sec.android.mms",
+      "name": "OEM System Package (com.sec.android)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.samsung.android.app": {
+      "pkg": "com.samsung.android.app",
+      "name": "OEM System Package (com.samsung.android)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.samsung.android.provider": {
+      "pkg": "com.samsung.android.provider",
+      "name": "OEM System Package (com.samsung.android)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.samsung.android.service": {
+      "pkg": "com.samsung.android.service",
+      "name": "OEM System Package (com.samsung.android)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.samsung.android.system": {
+      "pkg": "com.samsung.android.system",
+      "name": "OEM System Package (com.samsung.android)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.samsung.android.launcher": {
+      "pkg": "com.samsung.android.launcher",
+      "name": "OEM System Package (com.samsung.android)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.samsung.android.camera": {
+      "pkg": "com.samsung.android.camera",
+      "name": "OEM System Package (com.samsung.android)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.samsung.android.gallery": {
+      "pkg": "com.samsung.android.gallery",
+      "name": "OEM System Package (com.samsung.android)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.samsung.android.settings": {
+      "pkg": "com.samsung.android.settings",
+      "name": "OEM System Package (com.samsung.android)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.samsung.android.phone": {
+      "pkg": "com.samsung.android.phone",
+      "name": "OEM System Package (com.samsung.android)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.samsung.android.mms": {
+      "pkg": "com.samsung.android.mms",
+      "name": "OEM System Package (com.samsung.android)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.huawei.android.app": {
+      "pkg": "com.huawei.android.app",
+      "name": "OEM System Package (com.huawei.android)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.huawei.android.provider": {
+      "pkg": "com.huawei.android.provider",
+      "name": "OEM System Package (com.huawei.android)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.huawei.android.service": {
+      "pkg": "com.huawei.android.service",
+      "name": "OEM System Package (com.huawei.android)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.huawei.android.system": {
+      "pkg": "com.huawei.android.system",
+      "name": "OEM System Package (com.huawei.android)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.huawei.android.launcher": {
+      "pkg": "com.huawei.android.launcher",
+      "name": "OEM System Package (com.huawei.android)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.huawei.android.camera": {
+      "pkg": "com.huawei.android.camera",
+      "name": "OEM System Package (com.huawei.android)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.huawei.android.gallery": {
+      "pkg": "com.huawei.android.gallery",
+      "name": "OEM System Package (com.huawei.android)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.huawei.android.settings": {
+      "pkg": "com.huawei.android.settings",
+      "name": "OEM System Package (com.huawei.android)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.huawei.android.phone": {
+      "pkg": "com.huawei.android.phone",
+      "name": "OEM System Package (com.huawei.android)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.huawei.android.mms": {
+      "pkg": "com.huawei.android.mms",
+      "name": "OEM System Package (com.huawei.android)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.oppo.app": {
+      "pkg": "com.oppo.app",
+      "name": "OEM System Package (com.oppo)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.oppo.provider": {
+      "pkg": "com.oppo.provider",
+      "name": "OEM System Package (com.oppo)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.oppo.service": {
+      "pkg": "com.oppo.service",
+      "name": "OEM System Package (com.oppo)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.oppo.system": {
+      "pkg": "com.oppo.system",
+      "name": "OEM System Package (com.oppo)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.oppo.launcher": {
+      "pkg": "com.oppo.launcher",
+      "name": "OEM System Package (com.oppo)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.oppo.camera": {
+      "pkg": "com.oppo.camera",
+      "name": "OEM System Package (com.oppo)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.oppo.gallery": {
+      "pkg": "com.oppo.gallery",
+      "name": "OEM System Package (com.oppo)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.oppo.settings": {
+      "pkg": "com.oppo.settings",
+      "name": "OEM System Package (com.oppo)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.oppo.phone": {
+      "pkg": "com.oppo.phone",
+      "name": "OEM System Package (com.oppo)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.oppo.mms": {
+      "pkg": "com.oppo.mms",
+      "name": "OEM System Package (com.oppo)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.coloros.app": {
+      "pkg": "com.coloros.app",
+      "name": "OEM System Package (com.coloros)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.coloros.provider": {
+      "pkg": "com.coloros.provider",
+      "name": "OEM System Package (com.coloros)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.coloros.service": {
+      "pkg": "com.coloros.service",
+      "name": "OEM System Package (com.coloros)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.coloros.system": {
+      "pkg": "com.coloros.system",
+      "name": "OEM System Package (com.coloros)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.coloros.launcher": {
+      "pkg": "com.coloros.launcher",
+      "name": "OEM System Package (com.coloros)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.coloros.camera": {
+      "pkg": "com.coloros.camera",
+      "name": "OEM System Package (com.coloros)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.coloros.gallery": {
+      "pkg": "com.coloros.gallery",
+      "name": "OEM System Package (com.coloros)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.coloros.settings": {
+      "pkg": "com.coloros.settings",
+      "name": "OEM System Package (com.coloros)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.coloros.phone": {
+      "pkg": "com.coloros.phone",
+      "name": "OEM System Package (com.coloros)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.coloros.mms": {
+      "pkg": "com.coloros.mms",
+      "name": "OEM System Package (com.coloros)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.vivo.app": {
+      "pkg": "com.vivo.app",
+      "name": "OEM System Package (com.vivo)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.vivo.provider": {
+      "pkg": "com.vivo.provider",
+      "name": "OEM System Package (com.vivo)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.vivo.service": {
+      "pkg": "com.vivo.service",
+      "name": "OEM System Package (com.vivo)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.vivo.system": {
+      "pkg": "com.vivo.system",
+      "name": "OEM System Package (com.vivo)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.vivo.launcher": {
+      "pkg": "com.vivo.launcher",
+      "name": "OEM System Package (com.vivo)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.vivo.camera": {
+      "pkg": "com.vivo.camera",
+      "name": "OEM System Package (com.vivo)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.vivo.gallery": {
+      "pkg": "com.vivo.gallery",
+      "name": "OEM System Package (com.vivo)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.vivo.settings": {
+      "pkg": "com.vivo.settings",
+      "name": "OEM System Package (com.vivo)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.vivo.phone": {
+      "pkg": "com.vivo.phone",
+      "name": "OEM System Package (com.vivo)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.vivo.mms": {
+      "pkg": "com.vivo.mms",
+      "name": "OEM System Package (com.vivo)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.bbk.app": {
+      "pkg": "com.bbk.app",
+      "name": "OEM System Package (com.bbk)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.bbk.provider": {
+      "pkg": "com.bbk.provider",
+      "name": "OEM System Package (com.bbk)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.bbk.service": {
+      "pkg": "com.bbk.service",
+      "name": "OEM System Package (com.bbk)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.bbk.system": {
+      "pkg": "com.bbk.system",
+      "name": "OEM System Package (com.bbk)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.bbk.launcher": {
+      "pkg": "com.bbk.launcher",
+      "name": "OEM System Package (com.bbk)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.bbk.camera": {
+      "pkg": "com.bbk.camera",
+      "name": "OEM System Package (com.bbk)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.bbk.gallery": {
+      "pkg": "com.bbk.gallery",
+      "name": "OEM System Package (com.bbk)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.bbk.settings": {
+      "pkg": "com.bbk.settings",
+      "name": "OEM System Package (com.bbk)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.bbk.phone": {
+      "pkg": "com.bbk.phone",
+      "name": "OEM System Package (com.bbk)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.bbk.mms": {
+      "pkg": "com.bbk.mms",
+      "name": "OEM System Package (com.bbk)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.realme.app": {
+      "pkg": "com.realme.app",
+      "name": "OEM System Package (com.realme)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.realme.provider": {
+      "pkg": "com.realme.provider",
+      "name": "OEM System Package (com.realme)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.realme.service": {
+      "pkg": "com.realme.service",
+      "name": "OEM System Package (com.realme)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.realme.system": {
+      "pkg": "com.realme.system",
+      "name": "OEM System Package (com.realme)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.realme.launcher": {
+      "pkg": "com.realme.launcher",
+      "name": "OEM System Package (com.realme)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.realme.camera": {
+      "pkg": "com.realme.camera",
+      "name": "OEM System Package (com.realme)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.realme.gallery": {
+      "pkg": "com.realme.gallery",
+      "name": "OEM System Package (com.realme)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.realme.settings": {
+      "pkg": "com.realme.settings",
+      "name": "OEM System Package (com.realme)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.realme.phone": {
+      "pkg": "com.realme.phone",
+      "name": "OEM System Package (com.realme)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.realme.mms": {
+      "pkg": "com.realme.mms",
+      "name": "OEM System Package (com.realme)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.transsion.app": {
+      "pkg": "com.transsion.app",
+      "name": "OEM System Package (com.transsion)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.transsion.provider": {
+      "pkg": "com.transsion.provider",
+      "name": "OEM System Package (com.transsion)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.transsion.service": {
+      "pkg": "com.transsion.service",
+      "name": "OEM System Package (com.transsion)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.transsion.system": {
+      "pkg": "com.transsion.system",
+      "name": "OEM System Package (com.transsion)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.transsion.launcher": {
+      "pkg": "com.transsion.launcher",
+      "name": "OEM System Package (com.transsion)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.transsion.camera": {
+      "pkg": "com.transsion.camera",
+      "name": "OEM System Package (com.transsion)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.transsion.gallery": {
+      "pkg": "com.transsion.gallery",
+      "name": "OEM System Package (com.transsion)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.transsion.settings": {
+      "pkg": "com.transsion.settings",
+      "name": "OEM System Package (com.transsion)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.transsion.phone": {
+      "pkg": "com.transsion.phone",
+      "name": "OEM System Package (com.transsion)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.transsion.mms": {
+      "pkg": "com.transsion.mms",
+      "name": "OEM System Package (com.transsion)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.infinix.app": {
+      "pkg": "com.infinix.app",
+      "name": "OEM System Package (com.infinix)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.infinix.provider": {
+      "pkg": "com.infinix.provider",
+      "name": "OEM System Package (com.infinix)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.infinix.service": {
+      "pkg": "com.infinix.service",
+      "name": "OEM System Package (com.infinix)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.infinix.system": {
+      "pkg": "com.infinix.system",
+      "name": "OEM System Package (com.infinix)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.infinix.launcher": {
+      "pkg": "com.infinix.launcher",
+      "name": "OEM System Package (com.infinix)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.infinix.camera": {
+      "pkg": "com.infinix.camera",
+      "name": "OEM System Package (com.infinix)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.infinix.gallery": {
+      "pkg": "com.infinix.gallery",
+      "name": "OEM System Package (com.infinix)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.infinix.settings": {
+      "pkg": "com.infinix.settings",
+      "name": "OEM System Package (com.infinix)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.infinix.phone": {
+      "pkg": "com.infinix.phone",
+      "name": "OEM System Package (com.infinix)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.infinix.mms": {
+      "pkg": "com.infinix.mms",
+      "name": "OEM System Package (com.infinix)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.motorola.app": {
+      "pkg": "com.motorola.app",
+      "name": "OEM System Package (com.motorola)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.motorola.provider": {
+      "pkg": "com.motorola.provider",
+      "name": "OEM System Package (com.motorola)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.motorola.service": {
+      "pkg": "com.motorola.service",
+      "name": "OEM System Package (com.motorola)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.motorola.system": {
+      "pkg": "com.motorola.system",
+      "name": "OEM System Package (com.motorola)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.motorola.launcher": {
+      "pkg": "com.motorola.launcher",
+      "name": "OEM System Package (com.motorola)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.motorola.camera": {
+      "pkg": "com.motorola.camera",
+      "name": "OEM System Package (com.motorola)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.motorola.gallery": {
+      "pkg": "com.motorola.gallery",
+      "name": "OEM System Package (com.motorola)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.motorola.settings": {
+      "pkg": "com.motorola.settings",
+      "name": "OEM System Package (com.motorola)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.motorola.phone": {
+      "pkg": "com.motorola.phone",
+      "name": "OEM System Package (com.motorola)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.motorola.mms": {
+      "pkg": "com.motorola.mms",
+      "name": "OEM System Package (com.motorola)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.qualcomm.app": {
+      "pkg": "com.qualcomm.app",
+      "name": "OEM System Package (com.qualcomm)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.qualcomm.provider": {
+      "pkg": "com.qualcomm.provider",
+      "name": "OEM System Package (com.qualcomm)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.qualcomm.service": {
+      "pkg": "com.qualcomm.service",
+      "name": "OEM System Package (com.qualcomm)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.qualcomm.system": {
+      "pkg": "com.qualcomm.system",
+      "name": "OEM System Package (com.qualcomm)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.qualcomm.launcher": {
+      "pkg": "com.qualcomm.launcher",
+      "name": "OEM System Package (com.qualcomm)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.qualcomm.camera": {
+      "pkg": "com.qualcomm.camera",
+      "name": "OEM System Package (com.qualcomm)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.qualcomm.gallery": {
+      "pkg": "com.qualcomm.gallery",
+      "name": "OEM System Package (com.qualcomm)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.qualcomm.settings": {
+      "pkg": "com.qualcomm.settings",
+      "name": "OEM System Package (com.qualcomm)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.qualcomm.phone": {
+      "pkg": "com.qualcomm.phone",
+      "name": "OEM System Package (com.qualcomm)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.qualcomm.mms": {
+      "pkg": "com.qualcomm.mms",
+      "name": "OEM System Package (com.qualcomm)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.mediatek.app": {
+      "pkg": "com.mediatek.app",
+      "name": "OEM System Package (com.mediatek)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.mediatek.provider": {
+      "pkg": "com.mediatek.provider",
+      "name": "OEM System Package (com.mediatek)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.mediatek.service": {
+      "pkg": "com.mediatek.service",
+      "name": "OEM System Package (com.mediatek)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.mediatek.system": {
+      "pkg": "com.mediatek.system",
+      "name": "OEM System Package (com.mediatek)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.mediatek.launcher": {
+      "pkg": "com.mediatek.launcher",
+      "name": "OEM System Package (com.mediatek)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.mediatek.camera": {
+      "pkg": "com.mediatek.camera",
+      "name": "OEM System Package (com.mediatek)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.mediatek.gallery": {
+      "pkg": "com.mediatek.gallery",
+      "name": "OEM System Package (com.mediatek)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.mediatek.settings": {
+      "pkg": "com.mediatek.settings",
+      "name": "OEM System Package (com.mediatek)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.mediatek.phone": {
+      "pkg": "com.mediatek.phone",
+      "name": "OEM System Package (com.mediatek)",
+      "category": "Protected Hardware OEM"
+    },
+    "com.mediatek.mms": {
+      "pkg": "com.mediatek.mms",
+      "name": "OEM System Package (com.mediatek)",
+      "category": "Protected Hardware OEM"
+    }
+  }
+}

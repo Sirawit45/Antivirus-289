@@ -1,0 +1,32 @@
+{
+  "version": "1.0",
+  "sideload_inspectors": [
+    "null",
+    "com.android.chrome",
+    "org.mozilla.firefox",
+    "com.sec.android.app.sbrowser",
+    "com.google.android.apps.nbu.files",
+    "com.android.fileexplorer",
+    "com.android.bluetooth"
+  ],
+  "dangerous_permissions": [
+    "android.permission.BIND_ACCESSIBILITY_SERVICE",
+    "android.permission.SYSTEM_ALERT_WINDOW",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.READ_SMS",
+    "android.permission.RECEIVE_SMS",
+    "android.permission.SEND_SMS",
+    "android.permission.READ_CALL_LOG",
+    "android.permission.PROCESS_OUTGOING_CALLS",
+    "android.permission.REQUEST_INSTALL_PACKAGES",
+    "android.permission.BIND_DEVICE_ADMIN"
+  ],
+  "suspicious_package_patterns": [
+    "^com\\.zenthaq[0-9]+",
+    "^com\\.[a-z0-9]+\\.[a-z0-9_]+_[0-9]{4,}$",
+    ".*\\.(store|top|xyz|club|vip|buzz|fun|loan|apk)$",
+    "^com\\.(police|revenue|customs|dlt|pea|mea|sso|digitalwallet)\\.(?!gov\\.th)[a-z0-9\\.]+",
+    "^com\\.teamviewer\\.host\\.market\\.(?!samsung)",
+    "^com\\.cleaner\\.(pro|speed|boost)\\.[a-z0-9_]+"
+  ]
+}

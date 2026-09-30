@@ -1,0 +1,19 @@
+{
+  "app_name": "APKs Guard Pro 289",
+  "version": "4.0.0 Pro Enterprise",
+  "auto_update_db": true,
+  "auto_scan_on_connect": true,
+  "smart_check_enabled": true,
+  "include_sideloaded_check": true,
+  "include_accessibility_check": true,
+  "play_sound_effects": true,
+  "language": "th",
+  "theme": "cyber_dark",
+  "last_update_check": "2026-09-30 11:17:10",
+  "update_mirror_urls": [
+    "https://raw.githubusercontent.com/antivirus289/database/main/virus_database.json",
+    "https://api.github.com/repos/antivirus289/database/releases/latest"
+  ],
+  "custom_signatures": [],
+  "custom_whitelist": []
+}

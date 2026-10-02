@@ -1,7 +1,7 @@
 {
-  "version": "2026.09.30.1115",
-  "updated_at": "2026-09-30 11:15:03",
-  "total_signatures": 2571,
+  "version": "2026.10.02.1226",
+  "updated_at": "2026-10-02 12:26:12",
+  "total_signatures": 2602,
   "author": "Antivirus 289 Security Research Lab",
   "signatures": {
     "com.revenuedepartment.app": {
@@ -15429,6 +15429,192 @@
       "name": "Live Screen Capturer RAT",
       "type": "Accessibility Trojan",
       "risk": "CRITICAL"
+    },
+    "org.chromium.webapk.a0cb9d4b6fc762447_v2": {
+      "pkg": "org.chromium.webapk.a0cb9d4b6fc762447_v2",
+      "name": "Chrome WebAPK Adware / Rogue Notification Spammer",
+      "type": "WebAPK / Notification Adware",
+      "risk": "CRITICAL"
+    },
+    "org.chromium.webapk.a0fa7169ad3a7e560_v2": {
+      "pkg": "org.chromium.webapk.a0fa7169ad3a7e560_v2",
+      "name": "EasyShare WebAPK Adware / Notification Spammer",
+      "type": "WebAPK / Notification Adware",
+      "risk": "CRITICAL"
+    },
+    "com.shootmerge.shootmerge": {
+      "pkg": "com.shootmerge.shootmerge",
+      "name": "ShootMerge Full-Screen Overlay Adware (TopOn/SmartDigi)",
+      "type": "Aggressive Adware / Overlay Spammer",
+      "risk": "CRITICAL"
+    },
+    "com.party.fyhk.xm": {
+      "pkg": "com.party.fyhk.xm",
+      "name": "Sideloaded Adware App (Vivo AppStore)",
+      "type": "Adware / Sideload",
+      "risk": "HIGH"
+    },
+    "io.supercent.linkedcubic": {
+      "pkg": "io.supercent.linkedcubic",
+      "name": "LinkedCubic Sideloaded Adware Game",
+      "type": "Adware / Sideload",
+      "risk": "MEDIUM"
+    },
+    "com.nebula.mahjongtile": {
+      "pkg": "com.nebula.mahjongtile",
+      "name": "Mahjong Tile Adware Game",
+      "type": "Adware Spammer",
+      "risk": "MEDIUM"
+    },
+    "com.funreality.software.findandroid": {
+      "pkg": "com.funreality.software.findandroid",
+      "name": "Fake Device Finder Adware (EasyShare)",
+      "type": "Adware / Sideload",
+      "risk": "HIGH"
+    },
+    "com.funreality.software.nativefindmyiphone.lite": {
+      "pkg": "com.funreality.software.nativefindmyiphone.lite",
+      "name": "Fake Find My iPhone Clone Adware",
+      "type": "Adware / Sideload",
+      "risk": "HIGH"
+    },
+    "com.cbh.pluss": {
+      "pkg": "com.cbh.pluss",
+      "name": "Sideloaded Suspicious Dropper (EasyShare)",
+      "type": "Dropper / Sideload",
+      "risk": "HIGH"
+    },
+    "multi.parallel.dualspace.cloner": {
+      "pkg": "multi.parallel.dualspace.cloner",
+      "name": "Dual Space Cloner Overlay Adware",
+      "type": "Overlay Adware / Hijacker",
+      "risk": "HIGH"
+    },
+    "com.smmms.newstep": {
+      "pkg": "com.smmms.newstep",
+      "name": "System Alert Window Adware Hijacker",
+      "type": "Overlay Adware",
+      "risk": "HIGH"
+    },
+    "com.inc.tbb_vip": {
+      "pkg": "com.inc.tbb_vip",
+      "name": "VIP Adware Utility App",
+      "type": "Adware Utility",
+      "risk": "HIGH"
+    },
+    "com.miniframe.hippo": {
+      "pkg": "com.miniframe.hippo",
+      "name": "Hippo Adware Utility App",
+      "type": "Adware Utility",
+      "risk": "HIGH"
+    },
+    "com.passion.short.hotdrama.pro": {
+      "pkg": "com.passion.short.hotdrama.pro",
+      "name": "HotDrama Adware Video Spammer",
+      "type": "Adware Drama SDK",
+      "risk": "MEDIUM"
+    },
+    "com.vividshort.drama.vivid": {
+      "pkg": "com.vividshort.drama.vivid",
+      "name": "VividShort Adware Video Spammer",
+      "type": "Adware Drama SDK",
+      "risk": "MEDIUM"
+    },
+    "com.netshort.abroad": {
+      "pkg": "com.netshort.abroad",
+      "name": "NetShort Adware Video Spammer",
+      "type": "Adware Drama SDK",
+      "risk": "MEDIUM"
+    },
+    "com.drama.happy.look": {
+      "pkg": "com.drama.happy.look",
+      "name": "HappyLook Drama Adware Spammer",
+      "type": "Adware Drama SDK",
+      "risk": "MEDIUM"
+    },
+    "com.hifun.drama.video": {
+      "pkg": "com.hifun.drama.video",
+      "name": "HiFun Drama Adware Spammer",
+      "type": "Adware Drama SDK",
+      "risk": "MEDIUM"
+    },
+    "com.microshort.drama": {
+      "pkg": "com.microshort.drama",
+      "name": "MicroShort Drama Adware Spammer",
+      "type": "Adware Drama SDK",
+      "risk": "MEDIUM"
+    },
+    "com.touchskits.video": {
+      "pkg": "com.touchskits.video",
+      "name": "TouchSkits Drama Adware Spammer",
+      "type": "Adware Drama SDK",
+      "risk": "MEDIUM"
+    },
+    "com.storymatrix.drama": {
+      "pkg": "com.storymatrix.drama",
+      "name": "StoryMatrix Drama Adware Spammer",
+      "type": "Adware Drama SDK",
+      "risk": "MEDIUM"
+    },
+    "com.zyhwplatform.shortplay": {
+      "pkg": "com.zyhwplatform.shortplay",
+      "name": "ShortPlay Drama Adware Spammer",
+      "type": "Adware Drama SDK",
+      "risk": "MEDIUM"
+    },
+    "com.dramawave.app": {
+      "pkg": "com.dramawave.app",
+      "name": "DramaWave Adware Video Spammer",
+      "type": "Adware Drama SDK",
+      "risk": "MEDIUM"
+    },
+    "com.short.reels.drama.sh": {
+      "pkg": "com.short.reels.drama.sh",
+      "name": "Reels Drama Adware Spammer",
+      "type": "Adware Drama SDK",
+      "risk": "MEDIUM"
+    },
+    "com.kwshortvideo.kalostv": {
+      "pkg": "com.kwshortvideo.kalostv",
+      "name": "KalosTV Sideloaded Drama Adware",
+      "type": "Adware Drama SDK",
+      "risk": "MEDIUM"
+    },
+    "com.tai.goshort": {
+      "pkg": "com.tai.goshort",
+      "name": "GoShort Drama Adware Spammer",
+      "type": "Adware Drama SDK",
+      "risk": "MEDIUM"
+    },
+    "com.wtv.winkitv.pro": {
+      "pkg": "com.wtv.winkitv.pro",
+      "name": "WinkiTV Drama Adware Spammer",
+      "type": "Adware Drama SDK",
+      "risk": "MEDIUM"
+    },
+    "com.drama.dramaol": {
+      "pkg": "com.drama.dramaol",
+      "name": "Dramaol Drama Adware Spammer",
+      "type": "Adware Drama SDK",
+      "risk": "MEDIUM"
+    },
+    "com.drama.amordrama": {
+      "pkg": "com.drama.amordrama",
+      "name": "AmorDrama Adware Spammer",
+      "type": "Adware Drama SDK",
+      "risk": "MEDIUM"
+    },
+    "com.newreading.goodreels": {
+      "pkg": "com.newreading.goodreels",
+      "name": "GoodReels Drama Adware Spammer",
+      "type": "Adware Drama SDK",
+      "risk": "MEDIUM"
+    },
+    "com.codejoy.drama.go.aos": {
+      "pkg": "com.codejoy.drama.go.aos",
+      "name": "Drama Go Adware Spammer",
+      "type": "Adware Drama SDK",
+      "risk": "MEDIUM"
     }
   }
 }

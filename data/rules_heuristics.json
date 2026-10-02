@@ -7,7 +7,10 @@
     "com.sec.android.app.sbrowser",
     "com.google.android.apps.nbu.files",
     "com.android.fileexplorer",
-    "com.android.bluetooth"
+    "com.android.bluetooth",
+    "com.vivo.easyshare",
+    "com.coloros.backuprestore",
+    "com.huawei.android.clone"
   ],
   "dangerous_permissions": [
     "android.permission.BIND_ACCESSIBILITY_SERVICE",
@@ -22,6 +25,7 @@
     "android.permission.BIND_DEVICE_ADMIN"
   ],
   "suspicious_package_patterns": [
+    "^org\\.chromium\\.webapk\\.",
     "^com\\.zenthaq[0-9]+",
     "^com\\.[a-z0-9]+\\.[a-z0-9_]+_[0-9]{4,}$",
     ".*\\.(store|top|xyz|club|vip|buzz|fun|loan|apk)$",

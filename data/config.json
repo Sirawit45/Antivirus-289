@@ -9,7 +9,7 @@
   "play_sound_effects": true,
   "language": "th",
   "theme": "cyber_dark",
-  "last_update_check": "2026-09-30 11:17:10",
+  "last_update_check": "2026-10-02 12:15:30",
   "update_mirror_urls": [
     "https://raw.githubusercontent.com/antivirus289/database/main/virus_database.json",
     "https://api.github.com/repos/antivirus289/database/releases/latest"

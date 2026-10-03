@@ -285,7 +285,7 @@ function handleScanStateUpdate(state) {
     if (state.threats && state.threats.length !== currentThreats.length) {
       currentThreats = state.threats;
       renderThreatsTable(currentThreats);
-      updateSummaryBadges(currentThreats, state.scanned_count);
+      updateSummaryBadges(currentThreats, state.scanned_count, state.summary);
     }
   } else if (state.status === 'completed' || state.status === 'cancelled') {
     isScanning = false;
@@ -311,7 +311,7 @@ function handleScanStateUpdate(state) {
     
     currentThreats = state.threats || [];
     renderThreatsTable(currentThreats);
-    updateSummaryBadges(currentThreats, state.scanned_count);
+    updateSummaryBadges(currentThreats, state.scanned_count, state.summary);
   }
 }
 
@@ -324,7 +324,7 @@ function cancelScan() {
   isScanning = false;
 }
 
-function updateSummaryBadges(threats, totalScanned) {
+function updateSummaryBadges(threats, totalScanned, summary) {
   let crit = 0, high = 0;
   threats.forEach(t => {
     if (t.risk === 'CRITICAL') crit++;
@@ -336,7 +336,14 @@ function updateSummaryBadges(threats, totalScanned) {
   }
   document.getElementById('badgeCriticalThreats').innerText = crit;
   document.getElementById('badgeHighThreats').innerText = high;
-  document.getElementById('badgeSkippedWhitelist').innerText = '234';
+  
+  let protectedCount = 0;
+  if (summary && summary.skipped_count !== undefined) {
+    protectedCount = (summary.skipped_count || 0) + (summary.clean_count || 0);
+  } else if (totalScanned !== undefined) {
+    protectedCount = Math.max(0, totalScanned - threats.length);
+  }
+  document.getElementById('badgeSkippedWhitelist').innerText = protectedCount;
   document.getElementById('threatTableCount').innerText = threats.length;
   updateSelectedCount();
 }

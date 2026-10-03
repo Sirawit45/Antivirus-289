@@ -1,7 +1,7 @@
 {
-  "version": "2026.10.02.1226",
-  "updated_at": "2026-10-02 12:26:12",
-  "total_signatures": 2602,
+  "version": "2026.10.03.1506",
+  "updated_at": "2026-10-03 15:06:53",
+  "total_signatures": 2607,
   "author": "Antivirus 289 Security Research Lab",
   "signatures": {
     "com.revenuedepartment.app": {
@@ -15614,6 +15614,36 @@
       "pkg": "com.codejoy.drama.go.aos",
       "name": "Drama Go Adware Spammer",
       "type": "Adware Drama SDK",
+      "risk": "MEDIUM"
+    },
+    "cleaner.antivirus": {
+      "pkg": "cleaner.antivirus",
+      "name": "Fake Cleaner & Antivirus Dropper (หลอกเป็นแอนตี้ไวรัสแอบใช้สิทธิ์ Accessibility)",
+      "type": "Accessibility Trojan / Dropper",
+      "risk": "CRITICAL"
+    },
+    "myfiles.filemanager.fileexplorer.cleaner": {
+      "pkg": "myfiles.filemanager.fileexplorer.cleaner",
+      "name": "Fake File Explorer Cleaner (แอบขอสิทธิ์ Dropper ติดตั้งแอพอื่น)",
+      "type": "Dropper / Adware",
+      "risk": "HIGH"
+    },
+    "photo.selfie.camera.makeup.beauty": {
+      "pkg": "photo.selfie.camera.makeup.beauty",
+      "name": "Beauty Selfie Camera Overlay Adware (แอบขอสิทธิ์ทับหน้าจอ)",
+      "type": "Overlay Adware",
+      "risk": "HIGH"
+    },
+    "com.arrowremovalplan.mazegame": {
+      "pkg": "com.arrowremovalplan.mazegame",
+      "name": "Sideloaded Adware Game (ติดตั้งนอก Store พร้อมรัน Background)",
+      "type": "Sideloaded Adware",
+      "risk": "MEDIUM"
+    },
+    "com.best.uninstall.apps.uninstaller": {
+      "pkg": "com.best.uninstall.apps.uninstaller",
+      "name": "Sideloaded Uninstaller Utility Tool",
+      "type": "Sideloaded Utility Tool",
       "risk": "MEDIUM"
     }
   }

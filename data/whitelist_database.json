@@ -1,7 +1,7 @@
 {
   "version": "2026.09.29",
-  "updated_at": "2026-09-29 20:38:27",
-  "total_whitelisted": 234,
+  "updated_at": "2026-10-03 15:04:51",
+  "total_whitelisted": 244,
   "author": "Antivirus 289 Security Research Lab",
   "whitelist": {
     "com.kasikorn.retail.mbanking.wap": {
@@ -1173,6 +1173,56 @@
       "pkg": "com.mediatek.mms",
       "name": "OEM System Package (com.mediatek)",
       "category": "Protected Hardware OEM"
+    },
+    "com.tapktc.app": {
+      "pkg": "com.tapktc.app",
+      "name": "KTC Mobile (บัตรเครดิตเคทีซี)",
+      "category": "Official Thai Banking"
+    },
+    "com.google.android.contacts": {
+      "pkg": "com.google.android.contacts",
+      "name": "Google Contacts",
+      "category": "Google Core"
+    },
+    "com.garmin.android.apps.connectmobile": {
+      "pkg": "com.garmin.android.apps.connectmobile",
+      "name": "Garmin Connect Mobile",
+      "category": "Lifestyle & Wearable"
+    },
+    "com.openai.chatgpt": {
+      "pkg": "com.openai.chatgpt",
+      "name": "ChatGPT Official App",
+      "category": "Productivity / AI"
+    },
+    "com.ntbx.external.ngernturbo": {
+      "pkg": "com.ntbx.external.ngernturbo",
+      "name": "เงินเทอร์โบ (Ngernturbo Official)",
+      "category": "Financial Services"
+    },
+    "com.soatsolution.aisincoop": {
+      "pkg": "com.soatsolution.aisincoop",
+      "name": "สหกรณ์ออมทรัพย์ไอชิน (AISIN COOP)",
+      "category": "Financial Cooperative"
+    },
+    "com.axa.app.myaxa.th": {
+      "pkg": "com.axa.app.myaxa.th",
+      "name": "MyAXA Thailand Official",
+      "category": "Insurance Services"
+    },
+    "com.airvisual": {
+      "pkg": "com.airvisual",
+      "name": "AirVisual IQAir",
+      "category": "Utility / Environment"
+    },
+    "com.yoosee": {
+      "pkg": "com.yoosee",
+      "name": "Yoosee IP Camera",
+      "category": "Smart Home / IoT"
+    },
+    "com.alibaba.intl.android.apps.poseidon": {
+      "pkg": "com.alibaba.intl.android.apps.poseidon",
+      "name": "AliExpress Shopping",
+      "category": "E-Commerce"
     }
   }
 }

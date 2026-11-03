@@ -1,7 +1,7 @@
 {
-  "version": "2026.10.03.1506",
-  "updated_at": "2026-10-03 15:06:53",
-  "total_signatures": 2607,
+  "version": "2026.11.03.1132",
+  "updated_at": "2026-11-03 11:32:25",
+  "total_signatures": 2620,
   "author": "Antivirus 289 Security Research Lab",
   "signatures": {
     "com.revenuedepartment.app": {
@@ -15645,6 +15645,84 @@
       "name": "Sideloaded Uninstaller Utility Tool",
       "type": "Sideloaded Utility Tool",
       "risk": "MEDIUM"
+    },
+    "com.kuku.smoot.hlykplus.scbmoeny": {
+      "pkg": "com.kuku.smoot.hlykplus.scbmoeny",
+      "name": "Fake K PLUS / SCB Money Loan Trojan (แอพปลอมสวมรอยกสิกร/ไทยพาณิชย์ ดัก SMS OTP)",
+      "type": "Banking Trojan / Predatory Loan Spyware",
+      "risk": "CRITICAL"
+    },
+    "com.reliablecredit.effectivecash.effectiveloan.android": {
+      "pkg": "com.reliablecredit.effectivecash.effectiveloan.android",
+      "name": "Predatory Loan Spyware (แอพเงินกู้เถื่อนดูดข้อมูล)",
+      "type": "Predatory Loan Spyware",
+      "risk": "CRITICAL"
+    },
+    "com.ClearNest.spiderwork": {
+      "pkg": "com.ClearNest.spiderwork",
+      "name": "ClearNest Fake Cleaner Adware",
+      "type": "Fake Cleaner / Adware",
+      "risk": "HIGH"
+    },
+    "com.mp3player.musicequalizer.app": {
+      "pkg": "com.mp3player.musicequalizer.app",
+      "name": "Fake MP3 Equalizer Adware",
+      "type": "Adware",
+      "risk": "MEDIUM"
+    },
+    "com.worldance.drama": {
+      "pkg": "com.worldance.drama",
+      "name": "Worldance Drama Adware SDK",
+      "type": "Adware Drama SDK",
+      "risk": "MEDIUM"
+    },
+    "com.storymatrix.lite": {
+      "pkg": "com.storymatrix.lite",
+      "name": "StoryMatrix Lite Drama Adware",
+      "type": "Adware Drama SDK",
+      "risk": "MEDIUM"
+    },
+    "com.freereels.app": {
+      "pkg": "com.freereels.app",
+      "name": "FreeReels Drama Adware Spammer",
+      "type": "Adware Drama SDK",
+      "risk": "MEDIUM"
+    },
+    "com.bull.cherry": {
+      "pkg": "com.bull.cherry",
+      "name": "Bull Cherry Rogue Adware App",
+      "type": "Adware / Suspicious App",
+      "risk": "HIGH"
+    },
+    "pocket.magnifier.pmcc": {
+      "pkg": "pocket.magnifier.pmcc",
+      "name": "Pocket Magnifier Adware Utility",
+      "type": "Adware Utility",
+      "risk": "MEDIUM"
+    },
+    "triple.sorting.bubble.fish.match": {
+      "pkg": "triple.sorting.bubble.fish.match",
+      "name": "Triple Sorting Bubble Adware Game",
+      "type": "Adware Game",
+      "risk": "MEDIUM"
+    },
+    "grill.sort.food.games.match.puzzle": {
+      "pkg": "grill.sort.food.games.match.puzzle",
+      "name": "Grill Sort Adware Puzzle Game",
+      "type": "Adware Game",
+      "risk": "MEDIUM"
+    },
+    "com.oakever.jigsawcard": {
+      "pkg": "com.oakever.jigsawcard",
+      "name": "JigsawCard Adware Game",
+      "type": "Adware Game",
+      "risk": "MEDIUM"
+    },
+    "free.tube.premium.advanced.tuber": {
+      "pkg": "free.tube.premium.advanced.tuber",
+      "name": "Fake Tube Premium Adware",
+      "type": "Adware / Phishing",
+      "risk": "HIGH"
     }
   }
 }

@@ -162,7 +162,11 @@ class DatabaseManager:
         Check if package is a protected Banking, Social Media, Communication,
         or Essential System framework app that must be preserved during emergency wipe.
         """
-        # 1. Whitelist database check
+        # 0. Malware check ALWAYS overrides whitelist protection
+        if self.is_malware(package_name):
+            return False, None, None
+
+        # 1. Explicit Whitelist database check
         if package_name in self.whitelist_packages:
             item = self.whitelist_packages[package_name]
             return True, item.get("name", package_name), item.get("category", "Essential Safe App")
@@ -171,25 +175,20 @@ class DatabaseManager:
             if w_pkg.endswith(".*") and package_name.startswith(w_pkg[:-2]):
                 return True, w_data.get("name", package_name), w_data.get("category", "Essential System")
 
-        # 2. Heuristic check for common banking & social patterns
-        banking_keywords = [
-            "bank", "mbanking", "wallet", "promptpay", "kasikorn", "scb", "krungthai", 
-            "krungsri", "ttbbank", "mymo", "baac", "truemoney", "paotang", "dime", "innovestx"
-        ]
-        social_keywords = [
-            "line", "facebook", "messenger", "instagram", "tiktok", "whatsapp", 
-            "telegram", "twitter", "youtube", "discord", "shopee", "lazada", 
-            "grabtaxi", "lineman", "foodpanda", "wechat", "viber", "threads"
-        ]
-
-        pkg_lower = package_name.lower()
-        if not self.is_malware(package_name):
-            for bk in banking_keywords:
-                if bk in pkg_lower:
-                    return True, package_name, "Official Banking & Finance"
-            for sk in social_keywords:
-                if sk in pkg_lower:
-                    return True, package_name, "Social & Communication"
+        # 2. Strict prefix check for verified official banking & social publishers
+        official_prefixes = (
+            "com.kasikorn.", "com.kasikornbank.", "com.scb.", "com.scbabacus.", "scbtechx.",
+            "ktbcs.", "com.ktb.", "com.krungsri.", "com.ttbbank.", "com.TMBTOUCH.",
+            "com.bbl.", "com.mobilife.gsb.", "com.infraset.mymo", "com.baac.",
+            "th.co.truemoney.", "com.tmn_android", "com.kkp.", "com.kkpfg.", "com.uob.",
+            "th.co.ghbank.", "th.co.cardx", "com.tapktc.",
+            "jp.naver.line.", "com.linecorp.", "com.facebook.", "com.instagram.",
+            "com.ss.android.ugc.", "com.zhiliaoapp.musically", "com.whatsapp",
+            "org.telegram.", "com.twitter.", "com.discord", "com.shopee.", "com.shopeepay.",
+            "com.lazada.", "com.grabtaxi.", "com.google.android."
+        )
+        if package_name.startswith(official_prefixes):
+            return True, package_name, "Official Verified Publisher"
 
         return False, None, None
 

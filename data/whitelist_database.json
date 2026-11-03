@@ -1,7 +1,7 @@
 {
   "version": "2026.09.29",
-  "updated_at": "2026-10-03 15:04:51",
-  "total_whitelisted": 244,
+  "updated_at": "2026-11-03 11:32:25",
+  "total_whitelisted": 250,
   "author": "Antivirus 289 Security Research Lab",
   "whitelist": {
     "com.kasikorn.retail.mbanking.wap": {
@@ -1223,6 +1223,36 @@
       "pkg": "com.alibaba.intl.android.apps.poseidon",
       "name": "AliExpress Shopping",
       "category": "E-Commerce"
+    },
+    "com.mobilife.gsb.mymo": {
+      "pkg": "com.mobilife.gsb.mymo",
+      "name": "MyMo by GSB (ธนาคารออมสิน)",
+      "category": "Official Thai Banking"
+    },
+    "com.scbabacus.l2020": {
+      "pkg": "com.scbabacus.l2020",
+      "name": "FINNIX (ฟินนิกซ์ บจก.มันนี่ธันเดอร์ SCB)",
+      "category": "Official Thai Banking"
+    },
+    "com.promisethai.mobileapp.android": {
+      "pkg": "com.promisethai.mobileapp.android",
+      "name": "Promise (สินเชื่อพรอมิส Official)",
+      "category": "Financial Services"
+    },
+    "com.mor.promplus": {
+      "pkg": "com.mor.promplus",
+      "name": "หมอพร้อม (MorProm Official)",
+      "category": "Government / Health"
+    },
+    "com.t2p.bigc": {
+      "pkg": "com.t2p.bigc",
+      "name": "Big C Plus Official",
+      "category": "Retail / E-Commerce"
+    },
+    "com.sec.android.easyMover": {
+      "pkg": "com.sec.android.easyMover",
+      "name": "Samsung Smart Switch Mobile",
+      "category": "Samsung OEM"
     }
   }
 }

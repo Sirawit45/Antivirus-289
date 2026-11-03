@@ -31,6 +31,7 @@
     ".*\\.(store|top|xyz|club|vip|buzz|fun|loan|apk)$",
     "^com\\.(police|revenue|customs|dlt|pea|mea|sso|digitalwallet)\\.(?!gov\\.th)[a-z0-9\\.]+",
     "^com\\.teamviewer\\.host\\.market\\.(?!samsung)",
-    "^com\\.cleaner\\.(pro|speed|boost)\\.[a-z0-9_]+"
+    "^com\\.cleaner\\.(pro|speed|boost)\\.[a-z0-9_]+",
+    ".*(scbmoeny|hlykplus|effectiveloan|effectivecash|reliablecredit).*"
   ]
 }

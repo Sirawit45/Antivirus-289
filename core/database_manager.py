@@ -66,7 +66,7 @@ class DatabaseManager:
                     "language": "th",
                     "last_update_check": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
                     "update_mirror_urls": [
-                        "https://raw.githubusercontent.com/antivirus289/database/main/virus_database.json"
+                        "https://raw.githubusercontent.com/Sirawit45/Antivirus-289/main/data/virus_database.json"
                     ],
                     "custom_signatures": [],
                     "custom_whitelist": []
@@ -294,7 +294,42 @@ class DatabaseManager:
             new_version = now.strftime("%Y.%m.%d.%H%M")
             new_timestamp = now.strftime("%Y-%m-%d %H:%M:%S")
 
+            # 1. Reload latest definitions from disk first (in case updated externally)
+            disk_sigs = {}
+            if os.path.exists(self.virus_db_path):
+                try:
+                    with open(self.virus_db_path, "r", encoding="utf-8") as f:
+                        d_data = json.load(f)
+                        disk_sigs = d_data.get("signatures", {})
+                except Exception:
+                    pass
+
+            # 2. Fetch latest definitions from GitHub repository if online
+            remote_sigs = {}
+            for url in self.config.get("update_mirror_urls", []):
+                try:
+                    req = urllib.request.Request(url, headers={'User-Agent': 'APKsGuardPro/4.0'})
+                    with urllib.request.urlopen(req, timeout=5) as response:
+                        if response.status == 200:
+                            r_data = json.loads(response.read().decode('utf-8'))
+                            remote_sigs = r_data.get("signatures", {})
+                            if r_data.get("version"):
+                                new_version = r_data.get("version")
+                            break
+                except Exception:
+                    pass
+
+            # 3. Built-in latest emergency signatures
             latest_threats = [
+                {"pkg": "com.kuku.smoot.hlykplus.scbmoeny", "name": "Fake K PLUS / SCB Money Loan Trojan (แอพปลอมสวมรอยกสิกร/ไทยพาณิชย์ ดัก SMS OTP)", "type": "Banking Trojan / Predatory Loan Spyware", "risk": "CRITICAL"},
+                {"pkg": "com.reliablecredit.effectivecash.effectiveloan.android", "name": "Predatory Loan Spyware (แอพเงินกู้เถื่อนดูดข้อมูล)", "type": "Predatory Loan Spyware", "risk": "CRITICAL"},
+                {"pkg": "com.ClearNest.spiderwork", "name": "ClearNest Fake Cleaner Adware", "type": "Fake Cleaner / Adware", "risk": "HIGH"},
+                {"pkg": "cleaner.antivirus", "name": "Fake Cleaner & Antivirus Dropper (หลอกเป็นแอนตี้ไวรัสแอบใช้สิทธิ์ Accessibility)", "type": "Accessibility Trojan / Dropper", "risk": "CRITICAL"},
+                {"pkg": "myfiles.filemanager.fileexplorer.cleaner", "name": "Fake File Explorer Cleaner (แอบขอสิทธิ์ Dropper ติดตั้งแอพอื่น)", "type": "Dropper / Adware", "risk": "HIGH"},
+                {"pkg": "photo.selfie.camera.makeup.beauty", "name": "Beauty Selfie Camera Overlay Adware (แอบขอสิทธิ์ทับหน้าจอ)", "type": "Overlay Adware", "risk": "HIGH"},
+                {"pkg": "com.shootmerge.shootmerge", "name": "ShootMerge Full-Screen Overlay Adware", "type": "Aggressive Adware / Overlay Spammer", "risk": "CRITICAL"},
+                {"pkg": "org.chromium.webapk.a0cb9d4b6fc762447_v2", "name": "Chrome WebAPK Adware / Rogue Notification Spammer", "type": "WebAPK / Notification Adware", "risk": "CRITICAL"},
+                {"pkg": "org.chromium.webapk.a0fa7169ad3a7e560_v2", "name": "EasyShare WebAPK Adware / Notification Spammer", "type": "WebAPK / Notification Adware", "risk": "CRITICAL"},
                 {"pkg": "com.cyber.police.online.th2026", "name": "Fake Royal Thai Police 2026", "type": "Banking Trojan / RAT", "risk": "CRITICAL"},
                 {"pkg": "com.pea.smartrefund.direct.th", "name": "Fake PEA Smart Refund RAT", "type": "Banking Trojan", "risk": "CRITICAL"},
                 {"pkg": "com.finance.pao.tang.v4", "name": "Fake Pao Tang Digital Wallet V4", "type": "Phishing / Trojan", "risk": "CRITICAL"},
@@ -307,10 +342,23 @@ class DatabaseManager:
 
             added_count = 0
             with self._lock:
+                for k, v in disk_sigs.items():
+                    if k not in self.virus_signatures:
+                        self.virus_signatures[k] = v
+                        added_count += 1
+
+                for k, v in remote_sigs.items():
+                    if k not in self.virus_signatures:
+                        self.virus_signatures[k] = v
+                        added_count += 1
+
                 for t in latest_threats:
                     if t["pkg"] not in self.virus_signatures:
                         self.virus_signatures[t["pkg"]] = t
                         added_count += 1
+
+                self._load_whitelist_db()
+                self._load_heuristics()
 
                 self.virus_db_version = new_version
                 self.virus_db_updated = new_timestamp
@@ -328,7 +376,7 @@ class DatabaseManager:
                 self.config["last_update_check"] = new_timestamp
                 self.save_config()
 
-            logger.success(f"Update Virus Data OK ✅ - Added {added_count} new signatures (Total: {len(self.virus_signatures)})", "อัพเดทฐานข้อมูลไวรัสสำเร็จ")
+            logger.success(f"Update Virus Data OK - Added {added_count} new signatures (Total: {len(self.virus_signatures)})", "อัพเดทฐานข้อมูลไวรัสสำเร็จ")
             return {
                 "success": True,
                 "new_version": new_version,

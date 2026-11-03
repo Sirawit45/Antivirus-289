@@ -9,10 +9,9 @@
   "play_sound_effects": true,
   "language": "th",
   "theme": "cyber_dark",
-  "last_update_check": "2026-10-03 15:06:53",
+  "last_update_check": "2026-11-03 11:36:22",
   "update_mirror_urls": [
-    "https://raw.githubusercontent.com/antivirus289/database/main/virus_database.json",
-    "https://api.github.com/repos/antivirus289/database/releases/latest"
+    "https://raw.githubusercontent.com/Sirawit45/Antivirus-289/main/data/virus_database.json"
   ],
   "custom_signatures": [],
   "custom_whitelist": []
